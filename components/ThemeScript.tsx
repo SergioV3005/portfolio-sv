@@ -1,9 +1,8 @@
-﻿import Script from "next/script";
-
-export default function ThemeScript() {
+﻿export default function ThemeScript() {
   return (
-    <Script id="theme-script" strategy="beforeInteractive">
-      {`
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
         (function () {
           try {
             var stored = localStorage.getItem("theme");
@@ -16,7 +15,8 @@ export default function ThemeScript() {
             }
           } catch (e) {}
         })();
-      `}
-    </Script>
+      `
+      }}
+    />
   );
 }
