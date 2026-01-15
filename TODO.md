@@ -1,5 +1,5 @@
 Next steps: 
 
-1. Deploy to Vercel
+1. Deploy to Vercel (DONE)
 2. Add the resume
 3. Add more projects

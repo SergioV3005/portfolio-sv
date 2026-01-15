@@ -24,14 +24,6 @@ npm run typecheck
 npm run format
 ```
 
-## Deploy on Vercel
-
-1. Push this repository to GitHub.
-2. Sign in to https://vercel.com and click "New Project".
-3. Import the GitHub repository and keep the default settings (Framework: Next.js).
-4. Click "Deploy". Vercel will run `npm install` and `npm run build` automatically.
-5. After deployment, open the production URL or connect a custom domain in the Vercel project settings.
-
 ## Content updates
 
 - Site metadata and bio: `content/site.ts`
