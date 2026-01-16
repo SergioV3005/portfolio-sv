@@ -17,7 +17,9 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p>(c) {new Date().getFullYear()} {site.name}. All rights reserved.</p>
+        <p>
+          (c) {new Date().getFullYear()} {site.name}. All rights reserved.
+        </p>
       </div>
     </footer>
   );

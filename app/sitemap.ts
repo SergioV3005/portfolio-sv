@@ -9,6 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/experience`, lastModified },
     { url: `${site.url}/writing`, lastModified },
     { url: `${site.url}/about`, lastModified },
-    { url: `${site.url}/cv`, lastModified }
+    { url: `${site.url}/cv`, lastModified },
   ];
 }

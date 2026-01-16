@@ -46,9 +46,7 @@ export default function ExperiencePage() {
                   </div>
                   <p className="text-sm text-muted">{item.institution}</p>
                 </div>
-                <span className="text-xs uppercase tracking-[0.2em] text-muted">
-                  {item.period}
-                </span>
+                <span className="text-xs uppercase tracking-[0.2em] text-muted">{item.period}</span>
               </div>
               <p className="mt-3 text-sm text-muted">{item.details}</p>
             </div>

@@ -1,4 +1,4 @@
-Next steps: 
+Next steps:
 
 1. Deploy to Vercel (DONE).
 2. Add the resume.

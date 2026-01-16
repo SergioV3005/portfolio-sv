@@ -9,7 +9,7 @@ const ALL_TAG = "All";
 
 export default function ProjectsClient({
   projects,
-  tags
+  tags,
 }: {
   projects: Project[];
   tags: string[];

@@ -14,10 +14,8 @@ export default function CvPage() {
         >
           Download CV
         </a>
-        <p className="text-sm text-muted">
-          For quick contact, email {site.email}.
-        </p>
-        <div className="rounded-2xl border border-border bg-card/70 p-4">
+        <p className="text-sm text-muted">For quick contact, email {site.email}.</p>
+        <div className="bg-card/70 rounded-2xl border border-border p-4">
           <object
             data="/resume.pdf"
             type="application/pdf"

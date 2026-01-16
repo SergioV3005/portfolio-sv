@@ -9,19 +9,19 @@ import { site } from "@/content/site";
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans"
+  variable: "--font-sans",
 });
 
 const fraunces = Fraunces({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-serif"
+  variable: "--font-serif",
 });
 
 export const metadata: Metadata = {
   title: {
     default: `${site.name} - ${site.headline}`,
-    template: `%s - ${site.name}`
+    template: `%s - ${site.name}`,
   },
   description: site.description,
   metadataBase: new URL(site.url),
@@ -31,25 +31,21 @@ export const metadata: Metadata = {
     url: site.url,
     siteName: site.name,
     images: ["/opengraph-image"],
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} - ${site.headline}`,
     description: site.description,
-    images: ["/opengraph-image"]
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
-    follow: true
-  }
+    follow: true,
+  },
 };
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
@@ -58,9 +54,7 @@ export default function RootLayout({
         <ThemeScript />
         <div className="relative">
           <Navbar />
-          <main className="mx-auto w-full max-w-6xl px-6 pb-24 pt-8">
-            {children}
-          </main>
+          <main className="mx-auto w-full max-w-6xl px-6 pb-24 pt-8">{children}</main>
           <Footer />
         </div>
       </body>

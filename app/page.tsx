@@ -14,19 +14,13 @@ export default function HomePage() {
 
   return (
     <div className="space-y-20">
-      <section className="rounded-3xl border border-border bg-card/70 p-10 shadow-soft">
-        <p className="text-sm uppercase tracking-[0.2em] text-muted">
-          {site.headline}
-        </p>
+      <section className="bg-card/70 rounded-3xl border border-border p-10 shadow-soft">
+        <p className="text-sm uppercase tracking-[0.2em] text-muted">{site.headline}</p>
         <h1 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">
           {site.name}
-          <span className="block text-2xl text-muted md:text-3xl">
-            {site.heroTagline}
-          </span>
+          <span className="block text-2xl text-muted md:text-3xl">{site.heroTagline}</span>
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-muted">
-          {site.description}
-        </p>
+        <p className="mt-6 max-w-2xl text-lg text-muted">{site.description}</p>
         <div className="mt-8 flex flex-wrap gap-4">
           <Link
             href="/cv"
@@ -92,9 +86,7 @@ export default function HomePage() {
                 >
                   {post.title}
                 </a>
-                <span className="text-xs uppercase tracking-[0.2em] text-muted">
-                  {post.source}
-                </span>
+                <span className="text-xs uppercase tracking-[0.2em] text-muted">{post.source}</span>
               </div>
               <p className="mt-2 text-sm text-muted">{post.summary}</p>
             </article>

@@ -11,7 +11,7 @@ export default function AboutPage() {
             <p>{site.about}</p>
             <p>{site.aboutFocus}</p>
           </div>
-          <div className="rounded-2xl border border-border bg-card/70 p-6">
+          <div className="bg-card/70 rounded-2xl border border-border p-6">
             <h3 className="font-serif text-xl">Quick Facts</h3>
             <ul className="mt-4 space-y-2 text-sm text-muted">
               {site.facts.map((fact) => (
@@ -22,7 +22,10 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section title="Skills & Stack" description="Tools I use to build reliable data and AI systems.">
+      <Section
+        title="Skills & Stack"
+        description="Tools I use to build reliable data and AI systems."
+      >
         <div className="flex flex-wrap gap-2">
           {site.skills.map((skill) => (
             <Tag key={skill} label={skill} />

@@ -19,9 +19,7 @@ export default function WritingPage() {
               >
                 {post.title}
               </a>
-              <span className="text-xs uppercase tracking-[0.2em] text-muted">
-                {post.source}
-              </span>
+              <span className="text-xs uppercase tracking-[0.2em] text-muted">{post.source}</span>
             </div>
             <p className="mt-2 text-sm text-muted">{post.summary}</p>
           </article>

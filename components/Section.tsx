@@ -5,7 +5,7 @@ export default function Section({
   description,
   children,
   action,
-  id
+  id,
 }: {
   title: string;
   description?: string;

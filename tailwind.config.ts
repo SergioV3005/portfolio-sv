@@ -6,7 +6,7 @@ const config: Config = {
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./content/**/*.{ts,tsx}",
-    "./lib/**/*.{ts,tsx}"
+    "./lib/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
@@ -17,19 +17,19 @@ const config: Config = {
         card: "var(--card)",
         border: "var(--border)",
         accent: "var(--accent)",
-        accent2: "var(--accent-2)"
+        accent2: "var(--accent-2)",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui"],
         serif: ["var(--font-serif)", "ui-serif", "Georgia"],
-        mono: ["ui-monospace", "SFMono-Regular", "Menlo"]
+        mono: ["ui-monospace", "SFMono-Regular", "Menlo"],
       },
       boxShadow: {
-        soft: "0 12px 30px -18px rgba(15, 23, 42, 0.35)"
-      }
-    }
+        soft: "0 12px 30px -18px rgba(15, 23, 42, 0.35)",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
 
 export default config;

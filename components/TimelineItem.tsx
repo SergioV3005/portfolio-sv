@@ -2,7 +2,7 @@
 
 export default function TimelineItem({ item }: { item: Experience }) {
   return (
-    <div className="rounded-2xl border border-border bg-card/70 p-6">
+    <div className="bg-card/70 rounded-2xl border border-border p-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <div className="flex items-center gap-2">

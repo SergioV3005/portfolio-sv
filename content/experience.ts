@@ -9,9 +9,9 @@ export const experiences: Experience[] = [
     description: [
       "Research project: “Data Collection and Analysis of Human–Machine Interaction in the Context of Industry 5.0” (Cod. 25CE114).",
       "Part of HOMEY – A Human-centric IoE-based Framework for Supporting the Transition Towards Industry 5.0 (PRIN 2022, ID 2022-NAZ-0329/PER, funded by the EU – NextGenerationEU).",
-      "Collected and analyzed human-robot interaction data using the LeRobot framework.", 
-      "Extended ACT policy models with visual task encoding, evaluated multi-task learning performance, and benchmarked wearable-sensor-based control (Movella Xsens Dot) vs. leader-arm teleoperation."
-    ]
+      "Collected and analyzed human-robot interaction data using the LeRobot framework.",
+      "Extended ACT policy models with visual task encoding, evaluated multi-task learning performance, and benchmarked wearable-sensor-based control (Movella Xsens Dot) vs. leader-arm teleoperation.",
+    ],
   },
   {
     title: "Data Scientist - ML",
@@ -24,7 +24,7 @@ export const experiences: Experience[] = [
       "Authored the blog “Visualize Your Revenue Growth KPI with K-AI.”",
       "Built GenAI workflows using multimodal local LLMs to automatically explain KPI reports, and created the corresponding workflow, presentation slides, and blog post. This project was presented at 5+ conferences.",
       "Designed feature engineering pipelines powered by Generative AI, complemented by technical blogs and documentation.",
-      "Co-facilitated the KNIME GenAI Learnathon at the University of Pisa, mentoring over 100 students."
-    ]
-  }
+      "Co-facilitated the KNIME GenAI Learnathon at the University of Pisa, mentoring over 100 students.",
+    ],
+  },
 ];
