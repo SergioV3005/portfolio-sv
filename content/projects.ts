@@ -77,5 +77,25 @@ export const projects: Project[] = [
       },
     ],
     featured: false,
+  },
+  {
+    id: "llm-belief-bias",
+    title: "LLM Belief Bias Evaluation",
+    description:
+      "Evaluating belief bias in (local) large language models using syllogistic reasoning tasks.",
+      bullets: [
+        "Investigated belief bias in (local) large language models using syllogistic reasoning tasks.",
+        "Designed a questionnaire to measure the influence of prior beliefs on logical reasoning performance.",
+        "Benchmarked LLaMa3.2:1b, Mistral:7b and Qwen3:8b."
+      ],
+    tags: ["NLP", "LLM Evaluation", "Cognitive Science"],
+    image: "/images/belief-bias.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/llm-belief-bias"
+      },
+    ],
+    featured: false,
   }
 ];
