@@ -97,5 +97,23 @@ export const projects: Project[] = [
       },
     ],
     featured: false,
-  }
+  },
+  {
+    id: "hourly-time-series-traffic",
+    title: "Hourly Time Series Traffic Forecasting",
+    description:
+      "Forecasting hourly traffic congestion indicator using classical and deep learning models.",
+    bullets: [
+      "Compared SARIMA, UCM and deep learning models in the forecast of a hourly time series.",
+      "Engineered time-based and lag features to enhance model performance.",
+      "Evaluated models using MAE metrics.",
+    ],
+    tags: ["Time Series", "Forecasting", "Deep Learning"],
+    image: "/images/traffic-forecasting.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/hourly-time-series-traffic"
+  }   ],   featured: false,
+  },
 ];
