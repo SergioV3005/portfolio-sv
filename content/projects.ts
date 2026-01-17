@@ -2,20 +2,21 @@
 
 export const projects: Project[] = [
   {
-    id: "vla-robotics",
-    title: "Vision-Language-Action (VLA) Models for Robotics",
-    description:
-      "Multimodal agents for robotic pick-and-place following prompt-specified features.",
+    id: "kpi-interpretation",
+    title: "Automatic KPI Interpretation with Multimodal LLMs",
+    description: "Interpreting business KPI dashboards with multimodal LLMs inside KNIME.",
     bullets: [
-      "MSc thesis and ongoing research with private repositories and internal tooling.",
-      "Built dataset collection and labeling workflows to support multi-task training.",
-      "Designed evaluation harnesses for policy robustness and task success metrics.",
+      "Built a modular LLM workflow to explain KPI shifts with structured summaries.",
+      "Highlighted anomalies and trends using multimodal dashboard inputs.",
+      "Delivered consistent, human-readable explanations for stakeholders.",
     ],
-    tags: ["Robotics", "VLA", "Multimodal", "Dataset", "Evaluation"],
-    image: "/images/lerobot.jpg",
+    tags: ["GenAI", "KNIME", "LLM", "Analytics"],
+    image: "/images/kpis.png",
     links: [
-      { label: "LeRobot", href: "https://huggingface.co/lerobot" },
-      { label: "LeRobot Docs", href: "https://huggingface.co/lerobot" },
+      {
+        label: "KNIME Hub",
+        href: "https://hub.knime.com/knime/spaces/AI%20Extension%20Example%20Workflows/5%20Use%20Cases/Explain%20KPI%20report%20with%20multimodal%20LLMs~_HVjLdQa2xnChoyO/current-state",
+      },
     ],
     featured: true,
   },
@@ -40,22 +41,21 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: "kpi-interpretation",
-    title: "Automatic KPI Interpretation (KNIME + GenAI)",
-    description: "Interpreting business KPI dashboards with multimodal LLMs inside KNIME.",
+    id: "vla-robotics",
+    title: "Vision-Language-Action (VLA) Models for Robotics",
+    description:
+      "Multimodal agents for robotic pick-and-place following prompt-specified features.",
     bullets: [
-      "Built a modular LLM workflow to explain KPI shifts with structured summaries.",
-      "Highlighted anomalies and trends using multimodal dashboard inputs.",
-      "Delivered consistent, human-readable explanations for stakeholders.",
+      "Research activity (band 25CE114) with currently private repositories (paper under submission).",
+      "Benchmarked teleoperation interfaces (with 1-to-1 kynematic map) to train Imitation Learning models.",
+      "Experimented extensions of ACT model to support multi-tasking."
     ],
-    tags: ["GenAI", "KNIME", "LLM", "Analytics"],
-    image: "/images/kpis.png",
+    tags: ["Robotics", "VLA", "Multimodal", "Dataset", "Evaluation"],
+    image: "/images/lerobot.jpg",
     links: [
-      {
-        label: "KNIME Hub",
-        href: "https://hub.knime.com/knime/spaces/AI%20Extension%20Example%20Workflows/5%20Use%20Cases/Explain%20KPI%20report%20with%20multimodal%20LLMs~_HVjLdQa2xnChoyO/current-state",
-      },
+      { label: "LeRobot", href: "https://huggingface.co/lerobot" },
+      { label: "LeRobot Docs", href: "https://huggingface.co/lerobot" },
     ],
     featured: true,
-  },
+  }
 ];
