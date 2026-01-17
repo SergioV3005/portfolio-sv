@@ -57,5 +57,25 @@ export const projects: Project[] = [
       { label: "LeRobot Docs", href: "https://huggingface.co/lerobot" },
     ],
     featured: true,
+  },
+  {
+    id: "emotion-analysis-stock-tweets",
+    title: "Emotion Analysis of Stock Tweets",
+    description:
+      "Multi-class emotion classification and topic modeling in stock market tweets.",
+    bullets: [
+      "Emotion classification using TF-IDF, Word2Vec, and contextual embeddings (BERTweet, Distil-RoBERTa).",
+      "Topic modeling with LDA and BERTopic.",
+      "Integration of emoji features and sentiment lexicons (VADER, NRC, Bing Liu).",
+    ],
+    tags: ["NLP", "Sentiment Analysis", "Stock Market"],
+    image: "/images/emotion-analysis.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/emotion-analysis-stock-tweets",
+      },
+    ],
+    featured: false,
   }
 ];
