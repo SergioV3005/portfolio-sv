@@ -116,4 +116,23 @@ export const projects: Project[] = [
         href: "https://github.com/SergioV3005/hourly-time-series-traffic"
   }   ],   featured: false,
   },
+  {
+    id: "jailbreak-game",
+    title: "Jailbreak Game with LLMs",
+    description:
+      "A text-based jailbreak game where players try to make a LLM reveal a secret.",
+    bullets: [
+      "Developed a text-based jailbreak game using local LLMs.",
+      "Implemented difficult levels, with instruction prompt depending on the level.",
+      "Created UI for the user to chat with the model and test if they found the secret.",
+    ],
+    tags: ["NLP", "LLM", "Game Development"],
+    image: "/images/jailbreak-game.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/jailbreak-game"
+      },
+    ],  featured: false,
+  },
 ];
