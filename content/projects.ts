@@ -135,4 +135,42 @@ export const projects: Project[] = [
       },
     ],  featured: false,
   },
+  {
+    id: "portfolio-optimization",
+    title: "Benchmarking Portfolio Optimization Techniques",
+    description:
+      "A benchmark with multiple optimization strategies on real historical stock data from the Nasdaq.",
+    bullets: [
+      "Evaluated portfolio optimization techniques using historical stock data.",
+      "Explored the Markowitz Optimization and LSTM-based forecasting.",
+      "Created a benchmarking framework for portfolio optimization.",
+    ],
+    tags: ["Portfolio Optimization", "Finance", "Deep Learning"],
+    image: "/images/portfolio-optimization.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/khalilvandian/portfolio_management"
+      },
+    ],  featured: false,
+  },
+  {
+    id: "abstractive-summarization",
+    title: "Abstractive Summarization on XSum Dataset",
+    description:
+      "A benchmark with multiple models and NLP strategies applied to the XSum dataset.",
+    bullets: [
+      "Compared summarization performance across GRU, attention baselines, transformer models (T5-small, Flan-T5-base) and local LLMs.",
+      "Evaluate zero-shot, one-shot and few-shot prompting strategies, and also experimenting PEFT methods (LoRA, Prefix Tuning, ...).",
+      "Analyze outputs with ROUGE and BERTScore, and used explainability techniques to interpret models focus.",
+    ],
+    tags: ["Abstractive Summarization", "NLP", "Deep Learning"],
+    image: "/images/abstractive-summarization.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/khalilvandian/NLP-Summarization"
+      },
+    ],  featured: false,
+  },
 ];
