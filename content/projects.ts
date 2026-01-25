@@ -173,4 +173,24 @@ export const projects: Project[] = [
       },
     ],  featured: false,
   },
+  {
+  id: "chopper-preamplifier-proton-sound",
+  title: "MATLAB Modelling of a Chopper Preamplifier for Proton Sound Detectors (BSc Thesis)",
+  description:
+    "Bachelor’s thesis: modelling and analyzing a chopper-stabilized preamplifier chain for proton sound detector readout in MATLAB.",
+  bullets: [
+    "Developed a MATLAB model of the chopper preamplifier signal chain to study noise, gain, and stability trade-offs.",
+    "Simulated key operating conditions and design parameters to evaluate performance and guide design choices.",
+    "Documented the modelling approach, assumptions, and results in a reproducible thesis workflow and codebase.",
+  ],
+  tags: ["MATLAB", "Signal Processing", "Analog Electronics", "Modeling"],
+  image: "/images/chopper-preamplifier.png",
+  links: [
+    {
+      label: "GitHub Repo",
+      href: "https://github.com/SergioV3005/Matlab-Modelling-of-a-Chopper-Preamplifier-for-Proton-Sound-Detectors",
+    },
+  ],
+  featured: false,
+},
 ];
