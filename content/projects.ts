@@ -193,4 +193,25 @@ export const projects: Project[] = [
   ],
   featured: false,
 },
+{
+  id: "lex-rag-lab",
+  title: "Lex-RAG Lab",
+  description:
+    "Quick demo of Lex-RAG pipelines for document retrieval and question answering (currently no vector store, but BM25).",
+  bullets: [
+    "Implemented retrieval pipelines using lexical search (e.g., BM25).",
+    "Built an end-to-end workflow for chunking, indexing, querying, and answer generation over custom documents.",
+    "More to be done on retrieval quality and prompting strategies to improve grounded, citation-aware responses.",
+  ],
+  tags: ["RAG", "Information Retrieval", "LLM", "NLP"],
+  image: "/images/lex-rag-lab.png",
+  links: [
+    {
+      label: "GitHub Repo",
+      href: "https://github.com/SergioV3005/lex-rag-lab",
+    },
+  ],
+  featured: false,
+},
+
 ];
