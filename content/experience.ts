@@ -6,6 +6,7 @@ export const experiences: Experience[] = [
     org: "Intelligent Sensing Lab (ISLab), Univ. of Milano-Bicocca",
     href: "https://islab.disco.unimib.it/",
     period: "May 2025 - Oct 2025",
+    image: "/logos/logo_islab.png",
     description: [
       "Research project: “Data Collection and Analysis of Human–Machine Interaction in the Context of Industry 5.0” (Cod. 25CE114).",
       "Part of HOMEY – A Human-centric IoE-based Framework for Supporting the Transition Towards Industry 5.0 (PRIN 2022, ID 2022-NAZ-0329/PER, funded by the EU – NextGenerationEU).",
@@ -18,6 +19,7 @@ export const experiences: Experience[] = [
     org: "KNIME GmbH (Berlin, Germany)",
     href: "https://www.knime.com/",
     period: "Oct 2024 - Dec 2024",
+    image: "/logos/logo_knime.png",
     description: [
       "Worked within the Evangelism Team, focusing on the integration of Generative AI and data analytics through KNIME workflows.",
       "Developed a complete data app assembling the KPI dashboard featured in KNIME’s official blog post “6 CEO KPIs and How to Measure Them,” including workflows for both the KPI data warehouse and the dynamic dashboard.",
@@ -32,6 +34,7 @@ export const experiences: Experience[] = [
     org: "Microelectronics Group - UniMiB (Milan, Italy)",
     href: "https://www.fisica.unimib.it/it/ricerca/elettronica-e-fisica-applicata/microelectronic-group-unimib",
     period: "Oct 2022 - Feb 2023",
+    image: "/logos/logo_microlab.png",
     description: [
       "Worked on a research project in microelectronics, focused on Protond Sound Detectors.",
       "The experiment is based on sensing the weak thermoacoustic signal emitted by the fast energy deposition (and/or theheating process) at the end of the beam range (Bragg Peak)",

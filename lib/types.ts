@@ -45,6 +45,7 @@ export type Experience = {
   org: string;
   href: string;
   period: string;
+  image: string;
   description: string[];
 };
 
