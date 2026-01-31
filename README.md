@@ -1,6 +1,8 @@
 ﻿# Sergio Verga Portfolio
 
-Production-ready portfolio site built with Next.js (App Router), TypeScript, and Tailwind.
+Personal portfolio site built with Next.js (App Router), TypeScript, and Tailwind.
+
+![alt text](image.png)
 
 ## Local development
 
