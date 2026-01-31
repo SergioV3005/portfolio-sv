@@ -27,4 +27,16 @@ export const experiences: Experience[] = [
       "Co-facilitated the KNIME GenAI Learnathon at the University of Pisa, mentoring over 100 students.",
     ],
   },
+  {
+    title: "Research Intern - Microelectronics",
+    org: "Microelectronics Group - UniMiB (Milan, Italy)",
+    href: "https://www.fisica.unimib.it/it/ricerca/elettronica-e-fisica-applicata/microelectronic-group-unimib",
+    period: "Oct 2022 - Feb 2023",
+    description: [
+      "Worked on a research project in microelectronics, focused on Protond Sound Detectors.",
+      "The experiment is based on sensing the weak thermoacoustic signal emitted by the fast energy deposition (and/or theheating process) at the end of the beam range (Bragg Peak)",
+      "Implemented a Matlab simulation of a chopper-stabilized preamplifier to model and reduce low-frequency noise in the analog frontend.",
+      "Analyzed the performance of the preamplifier in terms of noise reduction and signal fidelity.",
+    ],
+  },
 ];
