@@ -213,5 +213,24 @@ export const projects: Project[] = [
   ],
   featured: false,
 },
-
+{
+  id: "text2topic-dsl",
+  title: "Text2Topic: Multi-Label Topic Classification (Data Science Lab)",
+  description:
+    "Multi-label topic classification to automate tagging and improve content organization for Doppiozero’s CMS, benchmarked across classical ML, pretrained embeddings, and LLM approaches.",
+  bullets: [
+    "Explored and cleaned a large-scale dataset (~200k articles) and defined a practical labeling policy (≤3 labels/article) using probability thresholds to reduce noisy tags.",
+    "Addressed class imbalance with targeted text augmentation (synonym replacement, back-translation, sentence shuffling, contextual BERT augmentation) to build a balanced training set.",
+    "Benchmarked Random Forest (TF-IDF), Universal Sentence Encoder embeddings, BART zero-shot, a custom neural model, and prompted LLMs; USE emerged as the strongest overall traditional approach in the comparison.",
+  ],
+  tags: ["NLP", "Multi-Label Classification", "Text Embeddings", "Benchmarking"],
+  image: "/images/text2topic.png",
+  links: [
+    {
+      label: "GitHub Repo",
+      href: "https://github.com/alexcalabrese/dsl_project",
+    },
+  ],
+  featured: false,
+},
 ];
