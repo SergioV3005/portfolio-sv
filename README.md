@@ -2,8 +2,7 @@
 
 Personal portfolio site built with **Next.js** (App Router), **TypeScript**, and **Tailwind CSS**, featuring a futuristic AI-inspired design with glassmorphism, violet/cyan gradients, and micro-animations.
 
-<!-- Replace the path below with your own screenshot -->
-![Portfolio Preview](image.png)
+![alt text](image-1.png)
 
 ## Design Highlights
 
@@ -45,13 +44,3 @@ npm run format
 - Writing: `content/writing.ts`
 
 Static assets live in `public/` and `public/images/`.
-
-## Updating the README screenshot
-
-Take a screenshot of the running site and save it as `image.png` in the project root:
-
-```bash
-npm run dev
-# open http://localhost:3000 in your browser
-# capture a full-page screenshot and save as image.png
-```
