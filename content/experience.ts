@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
     title: "External Research Collaborator (AI for Robotics)",
     org: "Intelligent Sensing Lab (ISLab), Univ. of Milano-Bicocca",
     href: "https://islab.disco.unimib.it/",
-    period: "May 2025 - Oct 2025",
+    period: "Mar 2025 - Oct 2025",
     image: "/logos/logo_islab.png",
     description: [
       "Research project: “Data Collection and Analysis of Human–Machine Interaction in the Context of Industry 5.0” (Cod. 25CE114).",
