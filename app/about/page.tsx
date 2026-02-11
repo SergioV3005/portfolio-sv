@@ -11,8 +11,8 @@ export default function AboutPage() {
             <p>{site.about}</p>
             <p>{site.aboutFocus}</p>
           </div>
-          <div className="bg-card/70 rounded-2xl border border-border p-6">
-            <h3 className="font-serif text-xl">Quick Facts</h3>
+          <div className="glass-card rounded-2xl p-6">
+            <h3 className="font-mono text-xl font-bold gradient-text">Quick Facts</h3>
             <ul className="mt-4 space-y-2 text-sm text-muted">
               {site.facts.map((fact) => (
                 <li key={fact}>- {fact}</li>

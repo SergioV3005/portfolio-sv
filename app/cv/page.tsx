@@ -10,12 +10,12 @@ export default function CvPage() {
       <div className="space-y-6">
         <a
           href="/resume.pdf"
-          className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-950"
+          className="btn-gradient inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm"
         >
           Download CV
         </a>
         <p className="text-sm text-muted">For quick contact, email {site.email}.</p>
-        <div className="bg-card/70 rounded-2xl border border-border p-4">
+        <div className="glass-card rounded-2xl p-4">
           <object
             data="/resume.pdf"
             type="application/pdf"

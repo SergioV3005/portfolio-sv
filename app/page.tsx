@@ -14,23 +14,23 @@ export default function HomePage() {
 
   return (
     <div className="space-y-20">
-      <section className="bg-card/70 rounded-3xl border border-border p-10 shadow-soft">
-        <p className="text-sm uppercase tracking-[0.2em] text-muted">{site.headline}</p>
-        <h1 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">
-          {site.name}
+      <section className="glass-card rounded-3xl p-10 animate-fade-in">
+        <p className="font-mono text-sm uppercase tracking-[0.2em] text-accent">{site.headline}</p>
+        <h1 className="mt-4 font-mono text-4xl font-bold leading-tight md:text-5xl">
+          <span className="gradient-text">{site.name}</span>
           <span className="block text-2xl text-muted md:text-3xl">{site.heroTagline}</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted">{site.description}</p>
         <div className="mt-8 flex flex-wrap gap-4">
           <Link
             href="/cv"
-            className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-950"
+            className="btn-gradient rounded-full px-5 py-2 text-sm"
           >
             Download CV
           </Link>
           <a
             href={`mailto:${site.email}`}
-            className="rounded-full border border-border px-5 py-2 text-sm font-semibold"
+            className="rounded-full border border-accent/25 bg-accent/10 px-5 py-2 text-sm font-semibold text-accent transition-all duration-200 hover:border-accent/50 hover:bg-accent/20 hover:shadow-glow"
           >
             Contact
           </a>
@@ -41,7 +41,7 @@ export default function HomePage() {
         title="Featured Projects"
         description="A focused snapshot of recent work spanning robotics, computer vision, and GenAI pipelines."
         action={
-          <Link href="/projects" className="text-sm font-semibold text-accent">
+          <Link href="/projects" className="text-sm font-semibold text-accent transition-colors hover:text-accent2">
             View all projects
           </Link>
         }
@@ -57,7 +57,7 @@ export default function HomePage() {
         title="Experience"
         description="Research and engineering roles with a focus on data pipelines, evaluation, and ML systems."
         action={
-          <Link href="/experience" className="text-sm font-semibold text-accent">
+          <Link href="/experience" className="text-sm font-semibold text-accent transition-colors hover:text-accent2">
             Full experience
           </Link>
         }
@@ -69,24 +69,24 @@ export default function HomePage() {
         title="Writing"
         description="Short technical pieces on analytics, KPI interpretation, and ML applications."
         action={
-          <Link href="/writing" className="text-sm font-semibold text-accent">
+          <Link href="/writing" className="text-sm font-semibold text-accent transition-colors hover:text-accent2">
             Read all
           </Link>
         }
       >
         <div className="space-y-4">
           {writingPreview.map((post) => (
-            <article key={post.href} className="rounded-2xl border border-border p-5">
+            <article key={post.href} className="glass-card rounded-2xl p-5">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <a
                   href={post.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-lg font-semibold"
+                  className="font-mono text-lg font-semibold"
                 >
                   {post.title}
                 </a>
-                <span className="text-xs uppercase tracking-[0.2em] text-muted">{post.source}</span>
+                <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">{post.source}</span>
               </div>
               <p className="mt-2 text-sm text-muted">{post.summary}</p>
             </article>
@@ -101,7 +101,7 @@ export default function HomePage() {
         <div className="flex flex-wrap items-center gap-4">
           <a
             href={`mailto:${site.email}`}
-            className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-950"
+            className="btn-gradient rounded-full px-5 py-2 text-sm"
           >
             Email Sergio
           </a>
@@ -109,7 +109,7 @@ export default function HomePage() {
             href={site.socials.find((item) => item.label === "LinkedIn")?.href}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-border px-5 py-2 text-sm font-semibold"
+            className="rounded-full border border-accent/25 bg-accent/10 px-5 py-2 text-sm font-semibold text-accent transition-all duration-200 hover:border-accent/50 hover:bg-accent/20 hover:shadow-glow"
           >
             LinkedIn
           </a>
