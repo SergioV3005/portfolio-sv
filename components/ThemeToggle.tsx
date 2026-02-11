@@ -33,9 +33,9 @@ export default function ThemeToggle() {
       type="button"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       aria-label="Toggle dark mode"
-      className="rounded-full border border-border px-3 py-1 text-xs font-semibold text-muted hover:text-fg"
+      className="rounded-full border border-accent/25 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent transition-all duration-200 hover:border-accent/50 hover:bg-accent/20 hover:shadow-glow"
     >
-      {theme === "dark" ? "Light mode" : "Dark mode"}
+      {theme === "dark" ? "☀ Light" : "◑ Dark"}
     </button>
   );
 }

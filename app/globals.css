@@ -4,24 +4,24 @@
 
 :root {
   color-scheme: light;
-  --bg: #f6f3ee;
+  --bg: #f0f2f8;
   --fg: #0f172a;
   --muted: #475569;
-  --card: #ffffff;
-  --border: #e2e8f0;
-  --accent: #0f766e;
-  --accent-2: #f97316;
+  --card: rgba(255, 255, 255, 0.6);
+  --border: rgba(139, 92, 246, 0.15);
+  --accent: #7c3aed;
+  --accent-2: #06b6d4;
 }
 
 .dark {
   color-scheme: dark;
-  --bg: #0b0f14;
+  --bg: #050508;
   --fg: #e2e8f0;
   --muted: #94a3b8;
-  --card: #101723;
-  --border: #1f2a37;
-  --accent: #22c55e;
-  --accent-2: #38bdf8;
+  --card: rgba(15, 15, 25, 0.6);
+  --border: rgba(139, 92, 246, 0.15);
+  --accent: #8b5cf6;
+  --accent-2: #06b6d4;
 }
 
 * {
@@ -35,22 +35,108 @@ body {
   min-height: 100vh;
 }
 
+/* ── dot‑grid background ─────────────────────────────── */
 body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: radial-gradient(circle, rgba(139, 92, 246, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ── gradient glow overlay ───────────────────────────── */
+body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(800px circle at 15% 10%, rgba(15, 118, 110, 0.12), transparent 60%),
-    radial-gradient(900px circle at 85% 0%, rgba(249, 115, 22, 0.12), transparent 60%);
+    radial-gradient(600px circle at 20% 10%, rgba(139, 92, 246, 0.14), transparent 55%),
+    radial-gradient(700px circle at 80% 5%, rgba(6, 182, 212, 0.10), transparent 55%);
+  animation: glow-shift 12s ease-in-out infinite alternate;
 }
 
-.dark body::before {
+.dark body::after {
   background:
-    radial-gradient(700px circle at 15% 10%, rgba(34, 197, 94, 0.15), transparent 60%),
-    radial-gradient(900px circle at 85% 0%, rgba(56, 189, 248, 0.1), transparent 60%);
+    radial-gradient(600px circle at 20% 10%, rgba(139, 92, 246, 0.18), transparent 55%),
+    radial-gradient(700px circle at 80% 5%, rgba(6, 182, 212, 0.12), transparent 55%);
 }
 
+/* ── keyframes ───────────────────────────────────────── */
+@keyframes glow-shift {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(30px, 15px) scale(1.08); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* ── utility classes ─────────────────────────────────── */
+.glass-card {
+  background: var(--card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 0 0 1px rgba(139, 92, 246, 0.06),
+    0 8px 32px -12px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow:
+    0 0 0 1px rgba(139, 92, 246, 0.12),
+    0 0 24px -4px rgba(139, 92, 246, 0.15),
+    0 12px 40px -12px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-border {
+  position: relative;
+}
+
+.glow-border::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.glow-border:hover::after {
+  opacity: 1;
+}
+
+.animate-fade-in {
+  animation: fade-in-up 0.6s ease-out both;
+}
+
+/* stagger children */
+.animate-fade-in > *:nth-child(1) { animation-delay: 0ms; }
+.animate-fade-in > *:nth-child(2) { animation-delay: 80ms; }
+.animate-fade-in > *:nth-child(3) { animation-delay: 160ms; }
+.animate-fade-in > *:nth-child(4) { animation-delay: 240ms; }
+.animate-fade-in > *:nth-child(5) { animation-delay: 320ms; }
+
+/* ── base overrides ──────────────────────────────────── */
 a {
   color: inherit;
   text-decoration: none;
@@ -61,9 +147,48 @@ a:hover {
 }
 
 ::selection {
-  background: rgba(15, 118, 110, 0.2);
+  background: rgba(139, 92, 246, 0.25);
 }
 
 .dark ::selection {
-  background: rgba(34, 197, 94, 0.25);
+  background: rgba(139, 92, 246, 0.35);
+}
+
+/* ── gradient button ─────────────────────────────────── */
+.btn-gradient {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: #ffffff;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-gradient:hover {
+  color: #ffffff;
+  box-shadow: 0 0 20px -4px rgba(139, 92, 246, 0.5);
+  transform: translateY(-1px);
+}
+
+/* ── accent bar (left side) ──────────────────────────── */
+.accent-bar {
+  position: relative;
+}
+
+.accent-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  opacity: 0.7;
+}
+
+/* ── navbar glow line ────────────────────────────────── */
+.nav-glow-line {
+  background: linear-gradient(90deg, transparent, var(--accent), var(--accent-2), transparent);
+  height: 1px;
+  opacity: 0.5;
+  animation: pulse-glow 4s ease-in-out infinite;
 }

@@ -30,11 +30,10 @@ export default function ProjectsClient({
           <button
             key={tag}
             onClick={() => setActiveTag(tag)}
-            className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
-              tag === activeTag
-                ? "bg-accent text-slate-950"
-                : "border border-border text-muted hover:text-fg"
-            }`}
+            className={`rounded-full px-3 py-1 text-xs font-semibold transition-all duration-200 ${tag === activeTag
+                ? "btn-gradient shadow-glow"
+                : "border border-accent/20 bg-accent/10 text-accent hover:border-accent/40 hover:bg-accent/20 hover:shadow-glow"
+              }`}
             aria-pressed={tag === activeTag}
           >
             {tag}

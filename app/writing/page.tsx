@@ -9,17 +9,17 @@ export default function WritingPage() {
     >
       <div className="space-y-4">
         {writings.map((post) => (
-          <article key={post.href} className="rounded-2xl border border-border p-5">
+          <article key={post.href} className="glass-card rounded-2xl p-5">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <a
                 href={post.href}
                 target="_blank"
                 rel="noreferrer"
-                className="text-lg font-semibold"
+                className="font-mono text-lg font-semibold"
               >
                 {post.title}
               </a>
-              <span className="text-xs uppercase tracking-[0.2em] text-muted">{post.source}</span>
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">{post.source}</span>
             </div>
             <p className="mt-2 text-sm text-muted">{post.summary}</p>
           </article>
