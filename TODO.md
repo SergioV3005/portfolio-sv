@@ -4,3 +4,4 @@ Next steps:
 2. Add Dashboard KNIME.
 3. (Eventually) add speaking events.
 4. (Eventually) add a feature to book an appointment via calendar (?).
+5. Add startups collaborations.
