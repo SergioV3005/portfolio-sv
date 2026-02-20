@@ -83,11 +83,11 @@ export const projects: Project[] = [
     title: "LLM Belief Bias Evaluation",
     description:
       "Evaluating belief bias in (local) large language models using syllogistic reasoning tasks.",
-      bullets: [
-        "Investigated belief bias in (local) large language models using syllogistic reasoning tasks.",
-        "Designed a questionnaire to measure the influence of prior beliefs on logical reasoning performance.",
-        "Benchmarked LLaMa3.2:1b, Mistral:7b and Qwen3:8b."
-      ],
+    bullets: [
+      "Investigated belief bias in (local) large language models using syllogistic reasoning tasks.",
+      "Designed a questionnaire to measure the influence of prior beliefs on logical reasoning performance.",
+      "Benchmarked LLaMa3.2:1b, Mistral:7b and Qwen3:8b."
+    ],
     tags: ["NLP", "LLM Evaluation", "Cognitive Science"],
     image: "/images/belief-bias.png",
     links: [
@@ -114,7 +114,7 @@ export const projects: Project[] = [
       {
         label: "GitHub Repo",
         href: "https://github.com/SergioV3005/hourly-time-series-traffic"
-  }   ],   featured: false,
+      }], featured: false,
   },
   {
     id: "jailbreak-game",
@@ -133,7 +133,7 @@ export const projects: Project[] = [
         label: "GitHub Repo",
         href: "https://github.com/SergioV3005/jailbreak-game"
       },
-    ],  featured: false,
+    ], featured: false,
   },
   {
     id: "portfolio-optimization",
@@ -152,7 +152,7 @@ export const projects: Project[] = [
         label: "GitHub Repo",
         href: "https://github.com/khalilvandian/portfolio_management"
       },
-    ],  featured: false,
+    ], featured: false,
   },
   {
     id: "abstractive-summarization",
@@ -171,66 +171,87 @@ export const projects: Project[] = [
         label: "GitHub Repo",
         href: "https://github.com/khalilvandian/NLP-Summarization"
       },
-    ],  featured: false,
+    ], featured: false,
   },
   {
-  id: "chopper-preamplifier-proton-sound",
-  title: "MATLAB Modelling of a Chopper Preamplifier for Proton Sound Detectors (BSc Thesis)",
-  description:
-    "Bachelor’s thesis: modelling and analyzing a chopper-stabilized preamplifier chain for proton sound detector readout in MATLAB.",
-  bullets: [
-    "Developed a MATLAB model of the chopper preamplifier signal chain to study noise, gain, and stability trade-offs.",
-    "Simulated key operating conditions and design parameters to evaluate performance and guide design choices.",
-    "Documented the modelling approach, assumptions, and results in a reproducible thesis workflow and codebase.",
-  ],
-  tags: ["MATLAB", "Signal Processing", "Analog Electronics", "Modeling"],
-  image: "/images/chopper-preamplifier.png",
-  links: [
-    {
-      label: "GitHub Repo",
-      href: "https://github.com/SergioV3005/Matlab-Modelling-of-a-Chopper-Preamplifier-for-Proton-Sound-Detectors",
-    },
-  ],
-  featured: false,
-},
-{
-  id: "lex-rag-lab",
-  title: "Lex-RAG Lab",
-  description:
-    "Quick demo of Lex-RAG pipelines for document retrieval and question answering (currently no vector store, but BM25).",
-  bullets: [
-    "Implemented retrieval pipelines using lexical search (e.g., BM25).",
-    "Built an end-to-end workflow for chunking, indexing, querying, and answer generation over custom documents.",
-    "More to be done on retrieval quality and prompting strategies to improve grounded, citation-aware responses.",
-  ],
-  tags: ["RAG", "Information Retrieval", "LLM", "NLP"],
-  image: "/images/lex-rag-lab.png",
-  links: [
-    {
-      label: "GitHub Repo",
-      href: "https://github.com/SergioV3005/lex-rag-lab",
-    },
-  ],
-  featured: false,
-},
-{
-  id: "text2topic-dsl",
-  title: "Text2Topic: Multi-Label Topic Classification (Data Science Lab)",
-  description:
-    "Multi-label topic classification to automate tagging and improve content organization for Doppiozero’s CMS, benchmarked across classical ML, pretrained embeddings, and LLM approaches.",
-  bullets: [
-    "Explored and cleaned a large-scale dataset (~200k articles) and defined a practical labeling policy (≤3 labels/article) using probability thresholds to reduce noisy tags.",
-    "Addressed class imbalance with targeted text augmentation (synonym replacement, back-translation, sentence shuffling, contextual BERT augmentation) to build a balanced training set.",
-    "Benchmarked Random Forest (TF-IDF), Universal Sentence Encoder embeddings, BART zero-shot, a custom neural model, and prompted LLMs; USE emerged as the strongest overall traditional approach in the comparison.",
-  ],
-  tags: ["NLP", "Multi-Label Classification", "Text Embeddings", "Benchmarking"],
-  image: "/images/text2topic.png",
-  links: [
-    {
-      label: "GitHub Repo",
-      href: "https://github.com/alexcalabrese/dsl_project",
-    },
-  ],
-  featured: false,
-},
+    id: "chopper-preamplifier-proton-sound",
+    title: "MATLAB Modelling of a Chopper Preamplifier for Proton Sound Detectors (BSc Thesis)",
+    description:
+      "Bachelor’s thesis: modelling and analyzing a chopper-stabilized preamplifier chain for proton sound detector readout in MATLAB.",
+    bullets: [
+      "Developed a MATLAB model of the chopper preamplifier signal chain to study noise, gain, and stability trade-offs.",
+      "Simulated key operating conditions and design parameters to evaluate performance and guide design choices.",
+      "Documented the modelling approach, assumptions, and results in a reproducible thesis workflow and codebase.",
+    ],
+    tags: ["MATLAB", "Signal Processing", "Analog Electronics", "Modeling"],
+    image: "/images/chopper-preamplifier.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/Matlab-Modelling-of-a-Chopper-Preamplifier-for-Proton-Sound-Detectors",
+      },
+    ],
+    featured: false,
+  },
+  {
+    id: "lex-rag-lab",
+    title: "Lex-RAG Lab",
+    description:
+      "Quick demo of Lex-RAG pipelines for document retrieval and question answering (currently no vector store, but BM25).",
+    bullets: [
+      "Implemented retrieval pipelines using lexical search (e.g., BM25).",
+      "Built an end-to-end workflow for chunking, indexing, querying, and answer generation over custom documents.",
+      "More to be done on retrieval quality and prompting strategies to improve grounded, citation-aware responses.",
+    ],
+    tags: ["RAG", "Information Retrieval", "LLM", "NLP"],
+    image: "/images/lex-rag-lab.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/lex-rag-lab",
+      },
+    ],
+    featured: false,
+  },
+  {
+    id: "text2topic-dsl",
+    title: "Text2Topic: Multi-Label Topic Classification (Data Science Lab)",
+    description:
+      "Multi-label topic classification to automate tagging and improve content organization for Doppiozero’s CMS, benchmarked across classical ML, pretrained embeddings, and LLM approaches.",
+    bullets: [
+      "Explored and cleaned a large-scale dataset (~200k articles) and defined a practical labeling policy (≤3 labels/article) using probability thresholds to reduce noisy tags.",
+      "Addressed class imbalance with targeted text augmentation (synonym replacement, back-translation, sentence shuffling, contextual BERT augmentation) to build a balanced training set.",
+      "Benchmarked Random Forest (TF-IDF), Universal Sentence Encoder embeddings, BART zero-shot, a custom neural model, and prompted LLMs; USE emerged as the strongest overall traditional approach in the comparison.",
+    ],
+    tags: ["NLP", "Multi-Label Classification", "Text Embeddings", "Benchmarking"],
+    image: "/images/text2topic.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/alexcalabrese/dsl_project",
+      },
+    ],
+    featured: false,
+  },
+  {
+    id: "kpis-datawarehouse",
+    title: "KPIs-Datawarehouse",
+    description:
+      "A KNIME workflow to automate the computation and storage of 6 key business KPIs into a SQLite database.",
+    bullets: [
+      "Built an automated ETL pipeline to extract 6 business KPIs for various years and save them into a structured SQLite database.",
+      "Implemented modular logic where each KPI is computed in a dedicated sub-workflow before being aggregated.",
+      "Configured dynamic database interactions using DB Writer for initial setup and DB Insert for incremental year-by-year updates.",
+      "Optimized the storage architecture to serve as the backend for an interactive 6 KPIs Data App dashboard.",
+    ],
+    tags: ["KNIME", "Finance", "ETL", "SQLite", "Analytics"],
+    image: "/images/kpis-datawarehouse.png",
+    links: [
+      {
+        label: "KNIME Hub",
+        href: "https://hub.knime.com/knime/spaces/KNIME%20for%20Finance/KPI/Data%20App%20-%206%20KPIs%20for%20any%20CEO/Writing%20to%20a%20Database%20-%206%20KPIs%20for%20any%20CEO~RExXC8o5QgZhqasG/current-state",
+      },
+    ],
+    featured: false,
+  },
 ];
