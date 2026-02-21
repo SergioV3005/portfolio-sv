@@ -192,3 +192,179 @@ a:hover {
   opacity: 0.5;
   animation: pulse-glow 4s ease-in-out infinite;
 }
+
+/* ── homepage hero orbs ─────────────────────────────── */
+.hero-orbs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-space-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-stars {
+  position: absolute;
+  inset: -20%;
+  background-repeat: repeat;
+  animation: star-drift 70s linear infinite;
+}
+
+.hero-stars-near {
+  opacity: 0.72;
+  background-image:
+    radial-gradient(circle at 12% 23%, rgba(15, 23, 42, 0.52) 1px, transparent 1.6px),
+    radial-gradient(circle at 64% 30%, rgba(2, 132, 199, 0.62) 1px, transparent 1.6px),
+    radial-gradient(circle at 40% 75%, rgba(124, 58, 237, 0.55) 1px, transparent 1.8px),
+    radial-gradient(circle at 80% 60%, rgba(15, 23, 42, 0.48) 1px, transparent 1.6px);
+  background-size: 220px 220px;
+}
+
+.hero-stars-far {
+  opacity: 0.48;
+  filter: blur(0.6px);
+  background-image:
+    radial-gradient(circle at 20% 18%, rgba(15, 23, 42, 0.4) 1px, transparent 1.7px),
+    radial-gradient(circle at 72% 44%, rgba(6, 182, 212, 0.42) 1px, transparent 1.7px),
+    radial-gradient(circle at 50% 80%, rgba(30, 64, 175, 0.38) 1px, transparent 1.7px);
+  background-size: 300px 300px;
+  animation-duration: 110s;
+}
+
+.dark .hero-stars-near {
+  opacity: 0.55;
+  background-image:
+    radial-gradient(circle at 12% 23%, rgba(255, 255, 255, 0.95) 1px, transparent 1.6px),
+    radial-gradient(circle at 64% 30%, rgba(125, 211, 252, 0.75) 1px, transparent 1.6px),
+    radial-gradient(circle at 40% 75%, rgba(216, 180, 254, 0.75) 1px, transparent 1.8px),
+    radial-gradient(circle at 80% 60%, rgba(255, 255, 255, 0.9) 1px, transparent 1.6px);
+}
+
+.dark .hero-stars-far {
+  opacity: 0.35;
+  background-image:
+    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.7) 1px, transparent 1.7px),
+    radial-gradient(circle at 72% 44%, rgba(167, 243, 208, 0.6) 1px, transparent 1.7px),
+    radial-gradient(circle at 50% 80%, rgba(191, 219, 254, 0.65) 1px, transparent 1.7px);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(2px);
+  opacity: 0.58;
+  mix-blend-mode: multiply;
+  will-change: transform;
+}
+
+.dark .hero-orb {
+  mix-blend-mode: screen;
+  opacity: 0.4;
+}
+
+.hero-orb-1 {
+  width: 260px;
+  height: 260px;
+  top: -120px;
+  right: -70px;
+  background: radial-gradient(circle at 35% 35%, rgba(139, 92, 246, 0.75), rgba(139, 92, 246, 0));
+  animation: orb-float-1 11s ease-in-out infinite alternate;
+}
+
+.hero-orb-2 {
+  width: 220px;
+  height: 220px;
+  bottom: -100px;
+  left: 15%;
+  background: radial-gradient(circle at 45% 45%, rgba(6, 182, 212, 0.65), rgba(6, 182, 212, 0));
+  animation: orb-float-2 13s ease-in-out infinite alternate;
+}
+
+.hero-orb-3 {
+  width: 160px;
+  height: 160px;
+  top: 38%;
+  left: 52%;
+  background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.4), rgba(14, 165, 233, 0));
+  animation: orb-float-3 9s ease-in-out infinite alternate;
+}
+
+@keyframes orb-float-1 {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(-20px, 18px, 0) scale(1.08); }
+}
+
+@keyframes orb-float-2 {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(26px, -12px, 0) scale(1.06); }
+}
+
+@keyframes orb-float-3 {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(-12px, 16px, 0) scale(0.92); }
+}
+
+.hero-shooting {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  border-radius: 9999px;
+  opacity: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(3, 105, 161, 0.95));
+  box-shadow: 0 0 16px rgba(14, 116, 144, 0.38);
+  transform: rotate(-25deg);
+}
+
+.dark .hero-shooting {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(186, 230, 253, 0.95));
+  box-shadow: 0 0 18px rgba(186, 230, 253, 0.55);
+}
+
+.hero-shooting-1 {
+  top: 18%;
+  right: -130px;
+  animation: shooting-star-1 7s ease-out infinite;
+}
+
+.hero-shooting-2 {
+  top: 46%;
+  right: -160px;
+  animation: shooting-star-2 9s ease-out infinite;
+  animation-delay: 2.2s;
+}
+
+@keyframes star-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-80px, 40px, 0); }
+}
+
+@keyframes shooting-star-1 {
+  0%, 72% { opacity: 0; transform: translate3d(0, 0, 0) rotate(-25deg); }
+  76% { opacity: 1; }
+  100% { opacity: 0; transform: translate3d(-500px, 220px, 0) rotate(-25deg); }
+}
+
+@keyframes shooting-star-2 {
+  0%, 74% { opacity: 0; transform: translate3d(0, 0, 0) rotate(-25deg); }
+  79% { opacity: 0.95; }
+  100% { opacity: 0; transform: translate3d(-430px, 200px, 0) rotate(-25deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-stars-near,
+  .hero-stars-far,
+  .hero-orb-1,
+  .hero-orb-2,
+  .hero-orb-3,
+  .hero-shooting-1,
+  .hero-shooting-2 {
+    animation: none;
+  }
+}

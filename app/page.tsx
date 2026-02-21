@@ -14,14 +14,25 @@ export default function HomePage() {
 
   return (
     <div className="space-y-20">
-      <section className="glass-card rounded-3xl p-10 animate-fade-in">
+      <section className="glass-card hero-animated relative overflow-hidden rounded-3xl p-10 animate-fade-in">
+        <div className="hero-space-layer" aria-hidden="true">
+          <span className="hero-stars hero-stars-near" />
+          <span className="hero-stars hero-stars-far" />
+          <span className="hero-shooting hero-shooting-1" />
+          <span className="hero-shooting hero-shooting-2" />
+        </div>
+        <div className="hero-orbs" aria-hidden="true">
+          <span className="hero-orb hero-orb-1" />
+          <span className="hero-orb hero-orb-2" />
+          <span className="hero-orb hero-orb-3" />
+        </div>
         <p className="font-mono text-sm uppercase tracking-[0.2em] text-accent">{site.headline}</p>
-        <h1 className="mt-4 font-mono text-4xl font-bold leading-tight md:text-5xl">
+        <h1 className="mt-4 font-mono text-4xl font-bold leading-tight md:text-5xl relative z-[1]">
           <span className="gradient-text">{site.name}</span>
           <span className="block text-2xl text-muted md:text-3xl">{site.heroTagline}</span>
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-muted">{site.description}</p>
-        <div className="mt-8 flex flex-wrap gap-4">
+        <p className="mt-6 max-w-2xl text-lg text-muted relative z-[1]">{site.description}</p>
+        <div className="mt-8 flex flex-wrap gap-4 relative z-[1]">
           <Link
             href="/cv"
             className="btn-gradient rounded-full px-5 py-2 text-sm"
