@@ -3,7 +3,7 @@
 export const site: SiteConfig = {
   name: "Sergio Verga",
   headline: "AI Engineer | ML Engineer",
-  heroTagline: "Building reliable data and AI pipelines for robotics, analytics, and LLM systems.",
+  heroTagline: "Building reliable data and AI pipelines for LLMs, robotics, and analytics.",
   description:
     "AI/ML engineer with an MSc in Data Science and a BSc in Physics. I design data pipelines, evaluation loops, and LLM/RAG workflows that move research prototypes into reliable systems.",
   url: "https://sergiov3005.github.io",
