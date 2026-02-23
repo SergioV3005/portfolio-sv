@@ -201,7 +201,7 @@ a:hover {
 
 .hero-orbs {
   position: absolute;
-  inset: 0;
+  inset: -28px;
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
@@ -211,7 +211,7 @@ a:hover {
 
 .hero-space-layer {
   position: absolute;
-  inset: 0;
+  inset: -32px;
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
