@@ -194,12 +194,19 @@ a:hover {
 }
 
 /* ── homepage hero orbs ─────────────────────────────── */
+.hero-animated {
+  --hero-parallax-x: 0;
+  --hero-parallax-y: 0;
+}
+
 .hero-orbs {
   position: absolute;
   inset: 0;
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
+  transform: translate3d(calc(var(--hero-parallax-x) * 14px), calc(var(--hero-parallax-y) * 14px), 0);
+  transition: transform 220ms ease-out;
 }
 
 .hero-space-layer {
@@ -208,13 +215,15 @@ a:hover {
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
+  transform: translate3d(calc(var(--hero-parallax-x) * -10px), calc(var(--hero-parallax-y) * -10px), 0);
+  transition: transform 220ms ease-out;
 }
 
 .hero-stars {
   position: absolute;
   inset: -20%;
   background-repeat: repeat;
-  animation: star-drift 70s linear infinite;
+  animation: star-drift 58s linear infinite;
 }
 
 .hero-stars-near {
@@ -235,7 +244,7 @@ a:hover {
     radial-gradient(circle at 72% 44%, rgba(6, 182, 212, 0.42) 1px, transparent 1.7px),
     radial-gradient(circle at 50% 80%, rgba(30, 64, 175, 0.38) 1px, transparent 1.7px);
   background-size: 300px 300px;
-  animation-duration: 110s;
+  animation-duration: 90s;
 }
 
 .dark .hero-stars-near {
@@ -275,7 +284,7 @@ a:hover {
   top: -120px;
   right: -70px;
   background: radial-gradient(circle at 35% 35%, rgba(139, 92, 246, 0.75), rgba(139, 92, 246, 0));
-  animation: orb-float-1 11s ease-in-out infinite alternate;
+  animation: orb-float-1 8.8s ease-in-out infinite alternate;
 }
 
 .hero-orb-2 {
@@ -284,7 +293,7 @@ a:hover {
   bottom: -100px;
   left: 15%;
   background: radial-gradient(circle at 45% 45%, rgba(6, 182, 212, 0.65), rgba(6, 182, 212, 0));
-  animation: orb-float-2 13s ease-in-out infinite alternate;
+  animation: orb-float-2 10.2s ease-in-out infinite alternate;
 }
 
 .hero-orb-3 {
@@ -293,7 +302,7 @@ a:hover {
   top: 38%;
   left: 52%;
   background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.4), rgba(14, 165, 233, 0));
-  animation: orb-float-3 9s ease-in-out infinite alternate;
+  animation: orb-float-3 7.2s ease-in-out infinite alternate;
 }
 
 @keyframes orb-float-1 {
@@ -330,14 +339,14 @@ a:hover {
 .hero-shooting-1 {
   top: 18%;
   right: -130px;
-  animation: shooting-star-1 7s ease-out infinite;
+  animation: shooting-star-1 5.6s ease-out infinite;
 }
 
 .hero-shooting-2 {
   top: 46%;
   right: -160px;
-  animation: shooting-star-2 9s ease-out infinite;
-  animation-delay: 2.2s;
+  animation: shooting-star-2 7.2s ease-out infinite;
+  animation-delay: 1.8s;
 }
 
 @keyframes star-drift {
@@ -358,6 +367,12 @@ a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero-orbs,
+  .hero-space-layer {
+    transform: none;
+    transition: none;
+  }
+
   .hero-stars-near,
   .hero-stars-far,
   .hero-orb-1,

@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+import Link from "next/link";
+import HeroParallaxSection from "@/components/HeroParallaxSection";
 import ProjectCard from "@/components/ProjectCard";
 import Section from "@/components/Section";
 import TimelineItem from "@/components/TimelineItem";
@@ -14,7 +15,7 @@ export default function HomePage() {
 
   return (
     <div className="space-y-20">
-      <section className="glass-card hero-animated relative overflow-hidden rounded-3xl p-10 animate-fade-in">
+      <HeroParallaxSection className="glass-card hero-animated relative overflow-hidden rounded-3xl p-10 animate-fade-in">
         <div className="hero-space-layer" aria-hidden="true">
           <span className="hero-stars hero-stars-near" />
           <span className="hero-stars hero-stars-far" />
@@ -46,7 +47,7 @@ export default function HomePage() {
             Contact
           </a>
         </div>
-      </section>
+      </HeroParallaxSection>
 
       <Section
         title="Featured Projects"
