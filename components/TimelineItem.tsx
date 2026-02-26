@@ -7,8 +7,10 @@ export default function TimelineItem({ item }: { item: Experience }) {
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <div className="flex items-center gap-2">
-            <div className="relative h-6 w-6 overflow-hidden rounded-md border border-accent/20 bg-accent/5">
-              <Image src={item.image} alt={`${item.org} logo`} fill className="object-contain" />
+            <div className="flex h-6 w-6 shrink-0 items-center justify-center overflow-hidden rounded-md border border-accent/20 bg-accent/5">
+              <div className="relative h-full w-full">
+                <Image src={item.image} alt={`${item.org} logo`} fill className="object-cover" sizes="24px" />
+              </div>
             </div>
             <h3 className="font-mono text-xl font-semibold">{item.title}</h3>
           </div>
