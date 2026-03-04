@@ -254,4 +254,24 @@ export const projects: Project[] = [
     ],
     featured: false,
   },
+  {
+    id: "purchase-order-email-agent",
+    title: "Purchase Order Email Agent",
+    description:
+      "LangGraph and Ollama workflow that processes purchase-order emails into validated Sales Order Excel files with human-in-the-loop review when needed.",
+    bullets: [
+      "Parses raw email text, classifies order intent, extracts line items, and resolves them against an Excel product catalog with deterministic safety rails.",
+      "Interrupts for human review when required fields are missing or ambiguities remain, then resumes execution with provided decisions.",
+      "Writes finalized Sales Order Excel output and persists a JSON audit log for each run.",
+    ],
+    tags: ["Python", "LangGraph", "LLM", "Automation", "Excel", "Human-in-the-loop"],
+    image: "/images/po-email-agent.png",
+    links: [
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/po-mail-processing-agent",
+      },
+    ],
+    featured: true,
+  },
 ];
