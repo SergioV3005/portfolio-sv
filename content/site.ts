@@ -37,6 +37,7 @@ export const site: SiteConfig = {
     "Python",
     "TypeScript/Node",
     "SQL",
+    "LangGraph",
     "Hugging Face",
     "PyTorch",
     "TensorFlow",
