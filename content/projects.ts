@@ -274,4 +274,24 @@ export const projects: Project[] = [
     ],
     featured: true,
   },
+  {
+  id: "skyitalia-voice-agent",
+  title: "SkyItalia AI Voice Agent",
+  description:
+    "Voice AI airline support agent built with ElevenLabs Agents that assists passengers with flight status, booking management, seat upgrades, compensation checks, and complaints using real API tools.",
+  bullets: [
+    "Designed a tool-based voice agent architecture integrating ElevenLabs with airline service APIs.",
+    "Implemented authentication, booking management, seat changes, upgrades, compensation checks, and complaint handling.",
+    "Added supervisor escalation logic compliant with airline support policies and EU261 compensation scenarios.",
+  ],
+  tags: ["Voice AI", "LLM", "Conversational AI", "APIs", "Automation"],
+  image: "/images/skyitalia-agent.png",
+  links: [
+    {
+      label: "Live Demo (if tokens available)",
+      href: "https://elevenlabs.io/app/talk-to?agent_id=agent_5401kk3x3mwtebds3py4dpeta9z1&branch_id=agtbrch_1801kk3x3nn2fcn897nhsj64anb2",
+    },
+  ],
+  featured: true,
+},
 ];
