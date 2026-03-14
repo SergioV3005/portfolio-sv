@@ -1,4 +1,4 @@
-﻿export type NavLink = {
+export type NavLink = {
   label: string;
   href: string;
 };
@@ -47,6 +47,17 @@ export type Experience = {
   period: string;
   image: string;
   description: string[];
+};
+
+export type Certification = {
+  title: string;
+  issuer: string;
+  href: string;
+  issuedDate: string;
+  expiryDate?: string;
+  credentialId?: string;
+  image: string;
+  skills?: string[];
 };
 
 export type Education = {

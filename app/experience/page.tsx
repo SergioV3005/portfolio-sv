@@ -1,7 +1,9 @@
-﻿import Section from "@/components/Section";
+import Section from "@/components/Section";
 import TimelineItem from "@/components/TimelineItem";
+import CertificationCard from "@/components/CertificationCard";
 import { education } from "@/content/education";
 import { experiences } from "@/content/experience";
+import { certifications } from "@/content/certifications";
 
 export default function ExperiencePage() {
   return (
@@ -53,6 +55,18 @@ export default function ExperiencePage() {
           ))}
         </div>
       </Section>
+
+      <Section
+        title="Licenses & Certifications"
+        description="Professional certifications and achievements in data science, AI, and analytics."
+      >
+        <div className="grid gap-4 sm:grid-cols-2">
+          {certifications.map((cert) => (
+            <CertificationCard key={cert.title} cert={cert} />
+          ))}
+        </div>
+      </Section>
     </div>
   );
 }
+
