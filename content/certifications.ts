@@ -4,7 +4,7 @@ export const certifications: Certification[] = [
   {
     title: "AI Agents Fundamentals",
     issuer: "Hugging Face",
-    href: "#",
+    href: "https://cas-bridge.xethub.hf.co/xet-bridge-us/67a47037749ea2c4b9fafd4b/505e4c36653a104a5aa85b8c845786bc14c3da9b199c89d86582d1ce4092b1c9?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20260314%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260314T162107Z&X-Amz-Expires=3600&X-Amz-Signature=6dbf23b662c442c151d336b82c619b0e6fa367ff7d926553413d9d4d162bfdd4&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-02-11.png%3B+filename%3D%222025-02-11.png%22%3B&response-content-type=image%2Fpng&x-amz-checksum-mode=ENABLED&x-id=GetObject&Expires=1773508867&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc3MzUwODg2N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82N2E0NzAzNzc0OWVhMmM0YjlmYWZkNGIvNTA1ZTRjMzY2NTNhMTA0YTVhYTg1YjhjODQ1Nzg2YmMxNGMzZGE5YjE5OWM4OWQ4NjU4MmQxY2U0MDkyYjFjOSoifV19&Signature=XwQerOvj-MCUtNXWcWZn2DJ10Gjs9idnLqeqOUGDO9p5c7P70B%7EpUrH0U-3I4QmWKvMiSVXdcN7hm9M8Z%7ELMxK%7ElBGaBBLO2HKWqjMAIL7Ms-XwQLhm2%7Eu72tZczcsbbvIe2b-dJa7Xri2wcmckUmbEu34b-AqWRRZS9XrvE3VN3hCozvOlkOsXEJj7xwqHZ8CR8UR9gHqhxqfyn1amr9oBtZ5ql4tjwMKroxOzQe-nqTVUVbzBOG8w5VBMYgKsrKA2Ej2tJ4rUCFdq%7EiIKRcVuANdroB928uKb4hWTT6b6G8seknh9k7T4puAFpyqXHpNdTxQtmWOKhOiVg98ZvGQ__&Key-Pair-Id=K2L8F4GPSG1IFC",
     issuedDate: "Feb 2025",
     credentialId: "sergiov2000",
     image: "/logos/logo_huggingface.png",
@@ -12,14 +12,14 @@ export const certifications: Certification[] = [
   {
     title: "International Student",
     issuer: "Università degli Studi di Milano-Bicocca",
-    href: "#",
+    href: "https://bestr.it/award/show/0Z3jzLeGQHmLcc74NB9Gvw",
     issuedDate: "Dec 2024",
     image: "/logos/logo_unimib.png",
   },
   {
     title: "Proficiency in KNIME Software for Collaboration and Productionization",
     issuer: "KNIME",
-    href: "#",
+    href: "https://www.credly.com/badges/873d4e4b-5b6d-47e9-9a03-e45751fb4bed/linked_in_profile",
     issuedDate: "Dec 2024",
     expiryDate: "Dec 2026",
     image: "/logos/logo_knime.png",
@@ -27,7 +27,7 @@ export const certifications: Certification[] = [
   {
     title: "Advanced Proficiency in KNIME Analytics Platform",
     issuer: "KNIME",
-    href: "#",
+    href: "https://www.credly.com/badges/4d873957-3dfa-49c9-a283-97531be8d093/linked_in_profile",
     issuedDate: "Oct 2024",
     expiryDate: "Oct 2026",
     image: "/logos/logo_knime.png",
@@ -35,14 +35,14 @@ export const certifications: Certification[] = [
   {
     title: "Basic Proficiency in KNIME Analytics Platform",
     issuer: "KNIME",
-    href: "#",
+    href: "https://www.credly.com/badges/e70e596d-3e89-47b6-ac86-7ea8e4cb33e3/linked_in_profile",
     issuedDate: "Oct 2024",
     image: "/logos/logo_knime.png",
   },
   {
     title: '1st place in the "Machine Learning Challenge" - Spring 2024',
     issuer: "KNIME",
-    href: "#",
+    href: "https://www.credly.com/badges/48cd1751-b291-47c6-a0ab-3479369b7bf3/linked_in_profile",
     issuedDate: "May 2024",
     image: "/logos/logo_knime.png",
     skills: ["Machine learning", "Data mining"],
