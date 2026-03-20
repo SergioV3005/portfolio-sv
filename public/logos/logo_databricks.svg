@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Databricks logo">
+  <rect width="64" height="64" rx="14" fill="#E24D42"/>
+  <g fill="#fff">
+    <path d="M16 20.5 32 12l16 8.5-4.2 2.2L32 16.4 20.2 22.7 16 20.5Z"/>
+    <path d="M16 30.5 32 22l16 8.5-4.2 2.2L32 26.4 20.2 32.7 16 30.5Z"/>
+    <path d="M16 40.5 32 32l16 8.5-16 8.5-16-8.5Zm4.2 0L32 46.8l11.8-6.3L32 34.2l-11.8 6.3Z"/>
+  </g>
+</svg>

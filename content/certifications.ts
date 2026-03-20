@@ -2,6 +2,13 @@ import { Certification } from "@/lib/types";
 
 export const certifications: Certification[] = [
   {
+    title: "AI Agent Fundamentals",
+    issuer: "Databricks",
+    href: "https://credentials.databricks.com/1475b7d0-ef35-4ef4-850c-583cb67fdf00#acc.sQy57wMi",
+    issuedDate: "Mar 2026",
+    image: "/logos/logo_databricks.svg",
+  },
+  {
     title: "AI Agents Fundamentals",
     issuer: "Hugging Face",
     href: "https://cas-bridge.xethub.hf.co/xet-bridge-us/67a47037749ea2c4b9fafd4b/505e4c36653a104a5aa85b8c845786bc14c3da9b199c89d86582d1ce4092b1c9?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20260314%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260314T162107Z&X-Amz-Expires=3600&X-Amz-Signature=6dbf23b662c442c151d336b82c619b0e6fa367ff7d926553413d9d4d162bfdd4&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-02-11.png%3B+filename%3D%222025-02-11.png%22%3B&response-content-type=image%2Fpng&x-amz-checksum-mode=ENABLED&x-id=GetObject&Expires=1773508867&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc3MzUwODg2N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82N2E0NzAzNzc0OWVhMmM0YjlmYWZkNGIvNTA1ZTRjMzY2NTNhMTA0YTVhYTg1YjhjODQ1Nzg2YmMxNGMzZGE5YjE5OWM4OWQ4NjU4MmQxY2U0MDkyYjFjOSoifV19&Signature=XwQerOvj-MCUtNXWcWZn2DJ10Gjs9idnLqeqOUGDO9p5c7P70B%7EpUrH0U-3I4QmWKvMiSVXdcN7hm9M8Z%7ELMxK%7ElBGaBBLO2HKWqjMAIL7Ms-XwQLhm2%7Eu72tZczcsbbvIe2b-dJa7Xri2wcmckUmbEu34b-AqWRRZS9XrvE3VN3hCozvOlkOsXEJj7xwqHZ8CR8UR9gHqhxqfyn1amr9oBtZ5ql4tjwMKroxOzQe-nqTVUVbzBOG8w5VBMYgKsrKA2Ej2tJ4rUCFdq%7EiIKRcVuANdroB928uKb4hWTT6b6G8seknh9k7T4puAFpyqXHpNdTxQtmWOKhOiVg98ZvGQ__&Key-Pair-Id=K2L8F4GPSG1IFC",
