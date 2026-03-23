@@ -7,6 +7,7 @@ export const certifications: Certification[] = [
     href: "https://credentials.databricks.com/1475b7d0-ef35-4ef4-850c-583cb67fdf00#acc.sQy57wMi",
     issuedDate: "Mar 2026",
     image: "/logos/logo_databricks.svg",
+    skills: ["LLMs", "Agentic AI"],
   },
   {
     title: "AI Agents Fundamentals",
@@ -15,6 +16,7 @@ export const certifications: Certification[] = [
     issuedDate: "Feb 2025",
     credentialId: "sergiov2000",
     image: "/logos/logo_huggingface.png",
+    skills: ["LLMs", "Agentic AI"],
   },
   {
     title: "International Student",
@@ -22,6 +24,7 @@ export const certifications: Certification[] = [
     href: "https://bestr.it/award/show/0Z3jzLeGQHmLcc74NB9Gvw",
     issuedDate: "Dec 2024",
     image: "/logos/logo_unimib.png",
+    skills: ["International", "Erasmus"],
   },
   {
     title: "Proficiency in KNIME Software for Collaboration and Productionization",
@@ -30,6 +33,7 @@ export const certifications: Certification[] = [
     issuedDate: "Dec 2024",
     expiryDate: "Dec 2026",
     image: "/logos/logo_knime.png",
+    skills: ["Data mining", "Machine learning"],
   },
   {
     title: "Advanced Proficiency in KNIME Analytics Platform",
@@ -38,6 +42,7 @@ export const certifications: Certification[] = [
     issuedDate: "Oct 2024",
     expiryDate: "Oct 2026",
     image: "/logos/logo_knime.png",
+    skills: ["Data mining", "Machine learning"],
   },
   {
     title: "Basic Proficiency in KNIME Analytics Platform",
@@ -45,6 +50,7 @@ export const certifications: Certification[] = [
     href: "https://www.credly.com/badges/e70e596d-3e89-47b6-ac86-7ea8e4cb33e3/linked_in_profile",
     issuedDate: "Oct 2024",
     image: "/logos/logo_knime.png",
+    skills: ["Data mining", "Machine learning"],
   },
   {
     title: '1st place in the "Machine Learning Challenge" - Spring 2024',
@@ -52,6 +58,6 @@ export const certifications: Certification[] = [
     href: "https://www.credly.com/badges/48cd1751-b291-47c6-a0ab-3479369b7bf3/linked_in_profile",
     issuedDate: "May 2024",
     image: "/logos/logo_knime.png",
-    skills: ["Machine learning", "Data mining"],
+    skills: ["Data mining", "Machine learning"],
   },
 ];
