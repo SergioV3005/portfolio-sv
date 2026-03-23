@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    title: "Data Scientist - ML",
+    title: "Data Science Intern - Generative AI",
     org: "KNIME GmbH (Berlin, Germany)",
     href: "https://www.knime.com/",
     period: "Oct 2024 - Dec 2024",
