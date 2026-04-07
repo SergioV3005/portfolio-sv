@@ -34,7 +34,18 @@ export default function AboutPage() {
       </Section>
 
       <Section title="Personal" description="Outside the lab and the terminal.">
-        <p className="text-muted">{site.personal}</p>
+        <p className="text-muted">
+          {site.personal} One example is{" "}
+          <a
+            href="https://ricochet-robots-delta.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-accent transition-colors duration-200 hover:text-accent2"
+          >
+            a Ricochet Robots-inspired game
+          </a>
+          .
+        </p>
       </Section>
     </div>
   );

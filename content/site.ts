@@ -45,5 +45,6 @@ export const site: SiteConfig = {
     "Git",
     "Docker",
   ],
-  personal: "Outside of work I enjoy calisthenics, reading, and traveling.",
+  personal:
+    "Outside of work I enjoy calisthenics, traveling, and I am especially passionate about logic games.",
 };
