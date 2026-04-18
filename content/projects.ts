@@ -136,6 +136,30 @@ export const projects: Project[] = [
     ], featured: false,
   },
   {
+    id: "ricochet-robots",
+    title: "Ricochet Robots: Pocket Pack",
+    description:
+      "A touch-friendly browser puzzle game inspired by Ricochet Robots, built around handcrafted puzzle packs.",
+    bullets: [
+      "Five handcrafted packs, from classic sliding boards to moving targets and portals.",
+      "Tap-to-move controls with undo, hints, solutions, and saved progress.",
+      "TypeScript game logic for walls, blockers, the black robot, and color-sensitive portals.",
+    ],
+    tags: ["React", "TypeScript", "Game Development", "Puzzle Design", "Vitest"],
+    image: "/images/ricochet-robots.png",
+    links: [
+      {
+        label: "Live Demo",
+        href: "https://ricochet-robots-delta.vercel.app/",
+      },
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/ricochet-robots",
+      },
+    ],
+    featured: false,
+  },
+  {
     id: "portfolio-optimization",
     title: "Benchmarking Portfolio Optimization Techniques",
     description:
