@@ -14,9 +14,13 @@ export default function TimelineItem({ item }: { item: Experience }) {
             </div>
             <h3 className="font-mono text-xl font-semibold">{item.title}</h3>
           </div>
-          <a href={item.href} target="_blank" rel="noreferrer" className="text-sm text-muted">
-            {item.org}
-          </a>
+          {item.href ? (
+            <a href={item.href} target="_blank" rel="noreferrer" className="text-sm text-muted">
+              {item.org}
+            </a>
+          ) : (
+            <p className="text-sm text-muted">{item.org}</p>
+          )}
         </div>
         <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">{item.period}</span>
       </div>

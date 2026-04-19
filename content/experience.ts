@@ -43,3 +43,17 @@ export const experiences: Experience[] = [
     ],
   },
 ];
+
+export const startupCollaborations: Experience[] = [
+  {
+    title: "Technical Co-Founder",
+    org: "Calisthenics Assistant",
+    period: "Nov 2024 - Present",
+    image: "/logos/logo_calisthenics_assistant.png",
+    description: [
+      "Co-founded an early-stage fitness-tech project focused on video-based analysis of calisthenics technique.",
+      "Built Python computer-vision tools to evaluate handstands, count push-ups, and overlay form feedback directly on videos.",
+      "Expanded the system beyond the initial prototype with support for additional bodyweight exercises and coaching logic.",
+    ],
+  },
+];
