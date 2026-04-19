@@ -317,5 +317,40 @@ export const projects: Project[] = [
     },
   ],
   featured: true,
-},
+  },
+  {
+    id: "strength-training-assistant",
+    title: "Bodyweight, Streetlifting, and Powerlifting Assistant",
+    description:
+      "Computer-vision assistant for video-based technique analysis across bodyweight, streetlifting, and powerlifting exercises.",
+    bullets: [
+      "Built Python computer-vision tools to evaluate exercise execution, count repetitions, and overlay form feedback directly on videos.",
+      "Extended the system from early calisthenics analysis toward broader strength-training support with additional exercise logic.",
+      "Designed the project as a practical coaching assistant for movement assessment and training feedback.",
+    ],
+    tags: ["Computer Vision", "Python", "Fitness Tech", "Video Analysis"],
+    image: "/logos/logo_calisthenics_assistant.png",
+    links: [],
+    featured: false,
+  },
+  {
+    id: "quickwine-recommendation-engine",
+    title: "QuickWine Content-Based Recommendation Engine",
+    description:
+      "Content-based recommendation engine for QuickWine, supported by simulated supermarket datasets for development and evaluation.",
+    bullets: [
+      "Developed a content-based recommendation pipeline to surface relevant wine suggestions from product attributes.",
+      "Generated simulated supermarket datasets to support experimentation, benchmarking, and early product validation.",
+      "Implemented the R&D work in a private GitHub repository as part of the QuickWine startup project.",
+    ],
+    tags: ["Recommendation Systems", "Python", "Data Simulation", "Startup"],
+    image: "/logos/logo_quickwine.png",
+    links: [
+      {
+        label: "Project Recognition",
+        href: "https://www.unipi.it/news/al-progetto-quickwine-un-riconoscimento-europeo-nellambito-del-programma-learn-di-start-for-future/",
+      },
+    ],
+    featured: false,
+  },
 ];
