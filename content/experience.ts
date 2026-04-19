@@ -46,6 +46,17 @@ export const experiences: Experience[] = [
 
 export const startupCollaborations: Experience[] = [
   {
+    title: "R&D Specialist",
+    org: "QuickWine",
+    href: "https://www.unipi.it/news/al-progetto-quickwine-un-riconoscimento-europeo-nellambito-del-programma-learn-di-start-for-future/",
+    period: "Feb 2025 - Aug 2025",
+    image: "/logos/logo_quickwine.png",
+    description: [
+      "Contributed to QuickWine, a startup project recognized within the LEARN program of Start for Future.",
+      "Developed the recommendation engine and generated simulated supermarket datasets in a private GitHub repository.",
+    ],
+  },
+  {
     title: "Technical Co-Founder",
     org: "Calisthenics Assistant",
     period: "Nov 2024 - Present",
