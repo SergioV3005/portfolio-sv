@@ -136,6 +136,30 @@ export const projects: Project[] = [
     ], featured: false,
   },
   {
+    id: "ricochet-robots",
+    title: "Ricochet Robots: Pocket Pack",
+    description:
+      "A touch-friendly browser puzzle game inspired by Ricochet Robots, built around handcrafted puzzle packs.",
+    bullets: [
+      "Five handcrafted packs, from classic sliding boards to moving targets and portals.",
+      "Tap-to-move controls with undo, hints, solutions, and saved progress.",
+      "TypeScript game logic for walls, blockers, the black robot, and color-sensitive portals.",
+    ],
+    tags: ["React", "TypeScript", "Game Development", "Puzzle Design", "Vitest"],
+    image: "/images/ricochet-robots.png",
+    links: [
+      {
+        label: "Live Demo",
+        href: "https://ricochet-robots-delta.vercel.app/",
+      },
+      {
+        label: "GitHub Repo",
+        href: "https://github.com/SergioV3005/ricochet-robots",
+      },
+    ],
+    featured: false,
+  },
+  {
     id: "portfolio-optimization",
     title: "Benchmarking Portfolio Optimization Techniques",
     description:
@@ -293,5 +317,40 @@ export const projects: Project[] = [
     },
   ],
   featured: true,
-},
+  },
+  {
+    id: "strength-training-assistant",
+    title: "Bodyweight, Streetlifting, and Powerlifting Assistant",
+    description:
+      "Computer-vision assistant for video-based technique analysis across bodyweight, streetlifting, and powerlifting exercises.",
+    bullets: [
+      "Built Python computer-vision tools to evaluate exercise execution, count repetitions, and overlay form feedback directly on videos.",
+      "Extended the system from early calisthenics analysis toward broader strength-training support with additional exercise logic.",
+      "Designed the project as a practical coaching assistant for movement assessment and training feedback.",
+    ],
+    tags: ["Computer Vision", "Python", "Fitness Tech", "Video Analysis"],
+    image: "/logos/logo_calisthenics_assistant.png",
+    links: [],
+    featured: false,
+  },
+  {
+    id: "quickwine-recommendation-engine",
+    title: "QuickWine Content-Based Recommendation Engine",
+    description:
+      "Content-based recommendation engine for QuickWine, supported by simulated supermarket datasets for development and evaluation.",
+    bullets: [
+      "Developed a content-based recommendation pipeline to surface relevant wine suggestions from product attributes.",
+      "Generated simulated supermarket datasets to support experimentation, benchmarking, and early product validation.",
+      "Implemented the R&D work in a private GitHub repository as part of the QuickWine startup project.",
+    ],
+    tags: ["Recommendation Systems", "Python", "Data Simulation", "Startup"],
+    image: "/logos/logo_quickwine.png",
+    links: [
+      {
+        label: "Project Recognition",
+        href: "https://www.unipi.it/news/al-progetto-quickwine-un-riconoscimento-europeo-nellambito-del-programma-learn-di-start-for-future/",
+      },
+    ],
+    featured: false,
+  },
 ];

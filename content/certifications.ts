@@ -6,7 +6,7 @@ export const certifications: Certification[] = [
     issuer: "Databricks",
     href: "https://credentials.databricks.com/1475b7d0-ef35-4ef4-850c-583cb67fdf00#acc.sQy57wMi",
     issuedDate: "Mar 2026",
-    image: "/logos/logo_databricks.svg",
+    image: "/logos/logo_databricks.png",
     skills: ["LLMs", "Agentic AI"],
   },
   {

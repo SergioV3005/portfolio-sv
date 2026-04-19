@@ -2,7 +2,7 @@ import Section from "@/components/Section";
 import TimelineItem from "@/components/TimelineItem";
 import CertificationCard from "@/components/CertificationCard";
 import { education } from "@/content/education";
-import { experiences } from "@/content/experience";
+import { experiences, startupCollaborations } from "@/content/experience";
 import { certifications } from "@/content/certifications";
 
 export default function ExperiencePage() {
@@ -63,6 +63,17 @@ export default function ExperiencePage() {
         <div className="grid gap-4 sm:grid-cols-2">
           {certifications.map((cert) => (
             <CertificationCard key={cert.title} cert={cert} />
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        title="Startup Collaborations"
+        description="Selective early-stage product work at the intersection of computer vision and practical user tools."
+      >
+        <div className="space-y-6">
+          {startupCollaborations.map((item) => (
+            <TimelineItem key={item.title} item={item} />
           ))}
         </div>
       </Section>

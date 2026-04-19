@@ -43,3 +43,28 @@ export const experiences: Experience[] = [
     ],
   },
 ];
+
+export const startupCollaborations: Experience[] = [
+  {
+    title: "R&D Specialist",
+    org: "QuickWine",
+    href: "https://www.unipi.it/news/al-progetto-quickwine-un-riconoscimento-europeo-nellambito-del-programma-learn-di-start-for-future/",
+    period: "Feb 2025 - Aug 2025",
+    image: "/logos/logo_quickwine.png",
+    description: [
+      "Contributed to QuickWine, a startup project recognized within the LEARN program of Start for Future.",
+      "Developed the recommendation engine and generated simulated supermarket datasets in a private GitHub repository.",
+    ],
+  },
+  {
+    title: "Technical Co-Founder",
+    org: "Calisthenics Assistant",
+    period: "Nov 2024 - Present",
+    image: "/logos/logo_calisthenics_assistant.png",
+    description: [
+      "Co-founded an early-stage fitness-tech project focused on video-based analysis of calisthenics technique.",
+      "Built Python computer-vision tools to evaluate handstands, count push-ups, and overlay form feedback directly on videos.",
+      "Expanded the system beyond the initial prototype with support for additional bodyweight exercises and coaching logic.",
+    ],
+  },
+];
