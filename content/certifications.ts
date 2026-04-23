@@ -2,6 +2,14 @@ import { Certification } from "@/lib/types";
 
 export const certifications: Certification[] = [
   {
+    title: "Claude 101",
+    issuer: "Anthropic",
+    href: "https://verify.skilljar.com/c/42pm34m2ocq5",
+    issuedDate: "Apr 2026",
+    image: "/logos/logo_claude101.png",
+    skills: ["LLMs", "Prompt engineering"],
+  },
+  {
     title: "AI Agent Fundamentals",
     issuer: "Databricks",
     href: "https://credentials.databricks.com/1475b7d0-ef35-4ef4-850c-583cb67fdf00#acc.sQy57wMi",
