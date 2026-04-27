@@ -50,7 +50,7 @@ export default function HomePage() {
               </div>
               <div className="signal-tile">
                 <span>Research</span>
-                <strong>Agents/Robotics</strong>
+                <strong>Agents/<wbr />Robotics</strong>
               </div>
               <div className="signal-tile">
                 <span>Systems</span>
