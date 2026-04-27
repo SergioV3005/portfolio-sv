@@ -50,7 +50,7 @@ export default function HomePage() {
               </div>
               <div className="signal-tile">
                 <span>Research</span>
-                <strong>Robotics</strong>
+                <strong>Agents/Robotics</strong>
               </div>
               <div className="signal-tile">
                 <span>Systems</span>
@@ -77,6 +77,24 @@ export default function HomePage() {
               <span className="data-node data-node-a" />
               <span className="data-node data-node-b" />
               <span className="data-node data-node-c" />
+              <span className="micro-cube micro-cube-a">
+                <span className="cube-face cube-front" />
+                <span className="cube-face cube-back" />
+                <span className="cube-face cube-right" />
+                <span className="cube-face cube-left" />
+                <span className="cube-face cube-top" />
+                <span className="cube-face cube-bottom" />
+              </span>
+              <span className="micro-cube micro-cube-b">
+                <span className="cube-face cube-front" />
+                <span className="cube-face cube-back" />
+                <span className="cube-face cube-right" />
+                <span className="cube-face cube-left" />
+                <span className="cube-face cube-top" />
+                <span className="cube-face cube-bottom" />
+              </span>
+              <span className="depth-plane depth-plane-a" />
+              <span className="depth-plane depth-plane-b" />
             </div>
             <div className="telemetry-panel">
               <span>MODEL STATUS</span>
