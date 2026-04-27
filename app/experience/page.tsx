@@ -25,7 +25,7 @@ export default function ExperiencePage() {
       >
         <div className="space-y-4">
           {education.map((item) => (
-            <div key={item.degree} className="glass-card accent-bar rounded-2xl pl-7 pr-5 py-5">
+            <div key={item.degree} className="timeline-card glass-card accent-bar rounded-2xl py-5 pl-7 pr-5">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <div className="flex items-center gap-2">

@@ -15,7 +15,7 @@ export default function AboutPage() {
             <h3 className="font-mono text-xl font-bold gradient-text">Quick Facts</h3>
             <ul className="mt-4 space-y-2 text-sm text-muted">
               {site.facts.map((fact) => (
-                <li key={fact}>- {fact}</li>
+                <li key={fact} className="bullet-line">{fact}</li>
               ))}
             </ul>
           </div>
