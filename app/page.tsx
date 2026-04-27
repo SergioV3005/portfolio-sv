@@ -14,38 +14,76 @@ export default function HomePage() {
   const writingPreview = writings.slice(0, 2);
 
   return (
-    <div className="space-y-20">
-      <HeroParallaxSection className="glass-card hero-animated relative overflow-hidden rounded-3xl p-10 animate-fade-in">
+    <div className="space-y-24">
+      <HeroParallaxSection className="hero-animated hero-stage relative overflow-hidden rounded-[2rem] px-6 py-10 animate-fade-in md:px-10 lg:px-12">
         <div className="hero-space-layer" aria-hidden="true">
           <span className="hero-stars hero-stars-near" />
           <span className="hero-stars hero-stars-far" />
-          <span className="hero-shooting hero-shooting-1" />
-          <span className="hero-shooting hero-shooting-2" />
+          <span className="hero-meteor hero-meteor-1" />
+          <span className="hero-meteor hero-meteor-2" />
+          <span className="hero-meteor hero-meteor-3" />
         </div>
-        <div className="hero-orbs" aria-hidden="true">
-          <span className="hero-orb hero-orb-1" />
-          <span className="hero-orb hero-orb-2" />
-          <span className="hero-orb hero-orb-3" />
-        </div>
-        <p className="font-mono text-sm uppercase tracking-[0.2em] text-accent">{site.headline}</p>
-        <h1 className="mt-4 font-mono text-4xl font-bold leading-tight md:text-5xl relative z-[1]">
-          <span className="gradient-text">{site.name}</span>
-          <span className="block text-2xl text-muted md:text-3xl">{site.heroTagline}</span>
-        </h1>
-        <p className="mt-6 max-w-2xl text-lg text-muted relative z-[1]">{site.description}</p>
-        <div className="mt-8 flex flex-wrap gap-4 relative z-[1]">
-          <Link
-            href="/cv"
-            className="btn-gradient rounded-full px-5 py-2 text-sm"
-          >
-            Download CV
-          </Link>
-          <a
-            href={`mailto:${site.email}`}
-            className="rounded-full border border-accent/25 bg-accent/10 px-5 py-2 text-sm font-semibold text-accent transition-all duration-200 hover:border-accent/50 hover:bg-accent/20 hover:shadow-glow"
-          >
-            Contact
-          </a>
+
+        <div className="relative z-[1] grid min-h-[520px] items-center gap-10 lg:grid-cols-[1.02fr_0.98fr]">
+          <div>
+            <p className="hero-kicker font-mono text-xs uppercase text-accent">{site.headline}</p>
+            <h1 className="mt-5 font-mono text-4xl font-bold leading-tight md:text-6xl">
+              <span className="gradient-text">{site.name}</span>
+              <span className="mt-4 block max-w-3xl text-2xl text-fg md:text-4xl">{site.heroTagline}</span>
+            </h1>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-muted md:text-lg">{site.description}</p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link href="/cv" className="btn-gradient rounded-full px-5 py-2 text-sm">
+                Download CV
+              </Link>
+              <a
+                href={`mailto:${site.email}`}
+                className="btn-ghost rounded-full px-5 py-2 text-sm"
+              >
+                Contact
+              </a>
+            </div>
+            <div className="mt-10 grid max-w-2xl gap-3 sm:grid-cols-3">
+              <div className="signal-tile">
+                <span>Focus</span>
+                <strong>LLM/RAG</strong>
+              </div>
+              <div className="signal-tile">
+                <span>Research</span>
+                <strong>Robotics</strong>
+              </div>
+              <div className="signal-tile">
+                <span>Systems</span>
+                <strong>Evaluation</strong>
+              </div>
+            </div>
+          </div>
+
+          <div className="hero-visual" aria-hidden="true">
+            <div className="orbital-rig">
+              <span className="orbit orbit-a" />
+              <span className="orbit orbit-b" />
+              <span className="orbit orbit-c" />
+              <span className="neural-core">
+                <span className="core-face core-front" />
+                <span className="core-face core-back" />
+                <span className="core-face core-right" />
+                <span className="core-face core-left" />
+                <span className="core-face core-top" />
+                <span className="core-face core-bottom" />
+              </span>
+              <span className="data-ring data-ring-a" />
+              <span className="data-ring data-ring-b" />
+              <span className="data-node data-node-a" />
+              <span className="data-node data-node-b" />
+              <span className="data-node data-node-c" />
+            </div>
+            <div className="telemetry-panel">
+              <span>MODEL STATUS</span>
+              <strong>ONLINE</strong>
+              <em>eval loop stable</em>
+            </div>
+          </div>
         </div>
       </HeroParallaxSection>
 

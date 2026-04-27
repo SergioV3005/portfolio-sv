@@ -3,7 +3,7 @@ import { Experience } from "@/lib/types";
 
 export default function TimelineItem({ item }: { item: Experience }) {
   return (
-    <div className="glass-card accent-bar rounded-2xl pl-7 pr-6 py-6">
+    <div className="timeline-card glass-card accent-bar rounded-2xl py-6 pl-7 pr-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <div className="flex items-center gap-2">
@@ -26,7 +26,7 @@ export default function TimelineItem({ item }: { item: Experience }) {
       </div>
       <ul className="mt-4 space-y-2 text-sm text-muted">
         {item.description.map((line) => (
-          <li key={line}>- {line}</li>
+          <li key={line} className="bullet-line">{line}</li>
         ))}
       </ul>
     </div>
