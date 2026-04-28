@@ -1,7 +1,5 @@
 Next steps:
 
-1. Add DW project in KNIME.
-2. Add Dashboard KNIME.
-3. (Eventually) add speaking events.
-4. (Eventually) add a feature to book an appointment via calendar (?).
-5. Add startups collaborations.
+1. Add Dashboard KNIME.
+2. (Eventually) add speaking events.
+3. (Eventually) add a feature to book an appointment via calendar (?).
