@@ -1,8 +1,7 @@
-﻿"use client";
+"use client";
 
 import { useMemo, useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
-import Tag from "@/components/Tag";
 import { Project } from "@/lib/types";
 
 const ALL_TAG = "All";
@@ -24,35 +23,35 @@ export default function ProjectsClient({
   }, [activeTag, projects]);
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-wrap gap-2">
-        {[ALL_TAG, ...tags].map((tag) => (
-          <button
-            key={tag}
-            onClick={() => setActiveTag(tag)}
-            className={`rounded-full px-3 py-1 text-xs font-semibold transition-all duration-200 ${tag === activeTag
-                ? "btn-gradient shadow-glow"
-                : "border border-accent/20 bg-accent/10 text-accent hover:border-accent/40 hover:bg-accent/20 hover:shadow-glow"
-              }`}
-            aria-pressed={tag === activeTag}
-          >
-            {tag}
-          </button>
-        ))}
+    <div className="space-y-8">
+      <div className="glass-card rounded-2xl p-4">
+        <div className="mb-3 flex items-center justify-between font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted">
+          <span>Filter by tag</span>
+          <span>
+            <span className="text-accent">{String(filtered.length).padStart(2, "0")}</span> /{" "}
+            {String(projects.length).padStart(2, "0")}
+          </span>
+        </div>
+        <div className="flex flex-wrap gap-1.5">
+          {[ALL_TAG, ...tags].map((tag) => (
+            <button
+              key={tag}
+              type="button"
+              onClick={() => setActiveTag(tag)}
+              className="tag cursor-pointer"
+              aria-pressed={tag === activeTag}
+            >
+              {tag}
+            </button>
+          ))}
+        </div>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         {filtered.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-      {filtered.length === 0 && (
-        <p className="text-sm text-muted">No projects match the selected tag yet.</p>
-      )}
-      <div className="flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <Tag key={tag} label={tag} />
-        ))}
-      </div>
+      {filtered.length === 0 && <p className="text-sm text-muted">No projects match the selected tag yet.</p>}
     </div>
   );
 }

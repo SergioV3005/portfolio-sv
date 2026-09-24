@@ -1,30 +1,19 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { site } from "@/content/site";
+import NavLinks from "@/components/NavLinks";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-40">
-      <div className="border-b border-border bg-bg/75 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4">
-          <Link href="/" className="brand-lockup font-mono text-xl font-bold tracking-tight">
-            <span className="gradient-text">{site.name}</span>
-          </Link>
-          <nav className="nav-pills flex flex-wrap items-center gap-2 text-sm text-muted">
-            {site.navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="rounded-full px-3 py-1.5 transition-colors duration-200 hover:text-accent"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-          <ThemeToggle />
-        </div>
+    <header className="sticky top-0 z-40 px-3 pt-3 sm:px-6">
+      <div className="nav-shell mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl px-3 py-2 sm:flex-nowrap sm:px-4">
+        <Link href="/" className="flex items-center gap-2.5 font-display text-base font-bold tracking-tight">
+          <span className="brand-mark" aria-hidden="true" />
+          <span>{site.name}</span>
+        </Link>
+        <ThemeToggle className="ml-auto sm:order-last sm:ml-0" />
+        <NavLinks links={site.navLinks} />
       </div>
-      <div className="nav-glow-line" />
     </header>
   );
 }

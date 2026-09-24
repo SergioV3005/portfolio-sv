@@ -10,39 +10,49 @@ type HeroParallaxSectionProps = {
 
 export default function HeroParallaxSection({ children, className }: HeroParallaxSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
+  const frameRef = useRef<number | null>(null);
 
-  const updateParallax = (event: PointerEvent<HTMLElement>) => {
-    if (event.pointerType && event.pointerType !== "mouse") {
-      return;
-    }
-
+  const setParallax = (x: number, y: number) => {
     const section = sectionRef.current;
     if (!section) {
       return;
     }
+    section.style.setProperty("--px", x.toFixed(3));
+    section.style.setProperty("--py", y.toFixed(3));
+  };
 
-    const bounds = section.getBoundingClientRect();
-    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+  const updateParallax = (event: PointerEvent<HTMLElement>) => {
+    if (event.pointerType !== "mouse" || frameRef.current !== null) {
+      return;
+    }
 
-    section.style.setProperty("--hero-parallax-x", (x * 2).toFixed(3));
-    section.style.setProperty("--hero-parallax-y", (y * 2).toFixed(3));
+    const { clientX, clientY } = event;
+    frameRef.current = requestAnimationFrame(() => {
+      frameRef.current = null;
+      const section = sectionRef.current;
+      if (!section) {
+        return;
+      }
+      const bounds = section.getBoundingClientRect();
+      setParallax(
+        ((clientX - bounds.left) / bounds.width - 0.5) * 2,
+        ((clientY - bounds.top) / bounds.height - 0.5) * 2,
+      );
+    });
   };
 
   const resetParallax = () => {
-    const section = sectionRef.current;
-    if (!section) {
-      return;
+    if (frameRef.current !== null) {
+      cancelAnimationFrame(frameRef.current);
+      frameRef.current = null;
     }
-
-    section.style.setProperty("--hero-parallax-x", "0");
-    section.style.setProperty("--hero-parallax-y", "0");
+    setParallax(0, 0);
   };
 
   return (
     <section
       ref={sectionRef}
-      className={className}
+      className={`hero-parallax ${className ?? ""}`}
       onPointerMove={updateParallax}
       onPointerLeave={resetParallax}
     >

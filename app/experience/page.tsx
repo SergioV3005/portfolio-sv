@@ -7,12 +7,13 @@ import { certifications } from "@/content/certifications";
 
 export default function ExperiencePage() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-24">
       <Section
+        index="01"
         title="Experience"
         description="Research and engineering roles centered on ML infrastructure, evaluation, and robotics pipelines."
       >
-        <div className="space-y-6">
+        <div className="timeline">
           {experiences.map((item) => (
             <TimelineItem key={item.title} item={item} />
           ))}
@@ -20,19 +21,21 @@ export default function ExperiencePage() {
       </Section>
 
       <Section
+        index="02"
         title="Education"
         description="Academic background grounding applied ML engineering with physics foundations."
       >
-        <div className="space-y-4">
+        <div className="timeline">
           {education.map((item) => (
-            <div key={item.degree} className="timeline-card glass-card accent-bar rounded-2xl py-5 pl-7 pr-5">
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <div>
-                  <div className="flex items-center gap-2">
+            <div key={item.degree} className="glass-card rounded-2xl p-6">
+              <span className="timeline-node" aria-hidden="true" />
+              <div className="flex flex-wrap items-start justify-between gap-3">
+                <div className="flex items-start gap-3">
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-accent/30 bg-accent/10 text-accent">
                     <svg
                       aria-hidden="true"
                       viewBox="0 0 24 24"
-                      className="h-4 w-4 text-accent"
+                      className="h-5 w-5"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="1.8"
@@ -44,19 +47,24 @@ export default function ExperiencePage() {
                       <path d="M18 10v6" />
                       <path d="M6 16c0 1.7 2.7 3 6 3s6-1.3 6-3" />
                     </svg>
-                    <p className="font-mono text-lg font-semibold">{item.degree}</p>
+                  </span>
+                  <div>
+                    <h3 className="font-display text-lg font-bold tracking-tight md:text-xl">{item.degree}</h3>
+                    <p className="text-sm text-muted">{item.institution}</p>
                   </div>
-                  <p className="text-sm text-muted">{item.institution}</p>
                 </div>
-                <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted">{item.period}</span>
+                <span className="rounded-md border border-line/15 px-2 py-1 font-mono text-[0.68rem] uppercase tracking-[0.16em] text-muted">
+                  {item.period}
+                </span>
               </div>
-              <p className="mt-3 text-sm text-muted">{item.details}</p>
+              <p className="mt-4 text-sm leading-relaxed text-muted">{item.details}</p>
             </div>
           ))}
         </div>
       </Section>
 
       <Section
+        index="03"
         title="Licenses & Certifications"
         description="Professional certifications and achievements in data science, AI, and analytics."
       >
@@ -68,10 +76,11 @@ export default function ExperiencePage() {
       </Section>
 
       <Section
+        index="04"
         title="Startup Collaborations"
         description="Selective early-stage product work at the intersection of computer vision and practical user tools."
       >
-        <div className="space-y-6">
+        <div className="timeline">
           {startupCollaborations.map((item) => (
             <TimelineItem key={item.title} item={item} />
           ))}
@@ -80,4 +89,3 @@ export default function ExperiencePage() {
     </div>
   );
 }
-

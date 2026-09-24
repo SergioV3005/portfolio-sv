@@ -2,10 +2,11 @@ import { site } from "@/content/site";
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-border tech-grid-bg">
-      <div className="nav-glow-line" />
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-muted md:flex-row md:items-center md:justify-between relative z-[1]">
-        <div className="flex flex-wrap gap-4">
+    <footer className="relative isolate mt-8">
+      <div className="glow-line" />
+      <div className="footer-grid pointer-events-none absolute inset-0 -z-10" aria-hidden="true" />
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-10 text-sm text-muted sm:px-6 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-wrap gap-x-5 gap-y-2">
           {site.socials.map((item) => (
             <a
               key={item.label}
@@ -18,8 +19,9 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="font-mono text-xs text-muted/70">
-          <span className="text-accent/50 mr-1">{'>_'}</span>&copy; {new Date().getFullYear()} {site.name}. All rights reserved.
+        <p className="flex items-center gap-2 font-mono text-xs text-muted">
+          <span className="status-dot" aria-hidden="true" />
+          &copy; {new Date().getFullYear()} {site.name}. All rights reserved.
         </p>
       </div>
     </footer>
