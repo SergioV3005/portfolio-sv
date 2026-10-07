@@ -2,6 +2,18 @@
 
 export const experiences: Experience[] = [
   {
+    title: "Agentic AI Engineer",
+    org: "Sunrise (Zurich, Switzerland)",
+    href: "https://www.sunrise.ch/",
+    period: "Jun 2026 - Present",
+    image: "/logos/logo_sunrise.png",
+    description: [
+      "Designing and building agentic AI solutions on Google Cloud Platform, leveraging Vertex AI for model orchestration and deployment.",
+      "Developing MCP (Model Context Protocol) servers to connect agents with internal tools, data sources, and enterprise systems.",
+      "Engineering large-scale data processing pipelines that power agentic workflows in production.",
+    ],
+  },
+  {
     title: "External Research Collaborator (AI for Robotics)",
     org: "Intelligent Sensing Lab (ISLab), Univ. of Milano-Bicocca",
     href: "https://islab.disco.unimib.it/",

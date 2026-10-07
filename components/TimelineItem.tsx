@@ -5,7 +5,7 @@ export default function TimelineItem({ item }: { item: Experience }) {
   return (
     <div className="glass-card rounded-2xl p-6">
       <span className="timeline-node" aria-hidden="true" />
-      <div className="flex flex-wrap items-start justify-between gap-3">
+      <div className="flex flex-col items-start gap-3">
         <div className="flex items-start gap-3">
           <div className="logo-chip mt-0.5 h-10 w-10 rounded-xl">
             <div className="relative h-full w-full">
