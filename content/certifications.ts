@@ -2,6 +2,15 @@ import { Certification } from "@/lib/types";
 
 export const certifications: Certification[] = [
   {
+    title: "Claude Academy Completion Badge",
+    issuer: "Anthropic",
+    href: "https://academy.claude.com/verify/c1ae6f3d437dd166636a6040929770d5",
+    issuedDate: "Nov 2026",
+    credentialId: "c1ae6f3d437dd166636a6040929770d5",
+    image: "/logos/logo_claude101.png",
+    skills: ["LLMs", "Agentic AI"],
+  },
+  {
     title: "Claude 101",
     issuer: "Anthropic",
     href: "https://verify.skilljar.com/c/42pm34m2ocq5",

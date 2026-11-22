@@ -8,37 +8,30 @@ export default function CertificationCard({ cert }: { cert: Certification }) {
       href={cert.href}
       target="_blank"
       rel="noreferrer"
-      className="glass-card group block h-full rounded-2xl p-5"
+      title={cert.credentialId ? `Credential ID ${cert.credentialId}` : undefined}
+      className="glass-card group flex h-full flex-col rounded-2xl p-5"
     >
-      <div className="flex items-start gap-4">
-        <div className="logo-chip h-11 w-11 rounded-xl">
+      <div className="flex flex-1 items-start gap-4">
+        <div className="logo-chip h-11 w-11 shrink-0 rounded-xl">
           <div className="relative h-full w-full">
             <Image src={cert.image} alt={`${cert.issuer} logo`} fill className="object-cover" sizes="44px" />
           </div>
         </div>
 
-        <div className="min-w-0 flex-1">
+        <div className="flex min-w-0 flex-1 flex-col self-stretch">
           <h3 className="font-display text-[0.95rem] font-bold leading-snug tracking-tight transition-colors group-hover:text-accent">
             {cert.title}
           </h3>
           <p className="mt-0.5 text-xs text-muted">{cert.issuer}</p>
 
-          <div className="mt-2 flex flex-wrap items-center gap-x-2 font-mono text-[0.68rem] text-muted">
-            <span>Issued {cert.issuedDate}</span>
-            {cert.expiryDate && (
-              <>
-                <span className="opacity-40">·</span>
-                <span>Expires {cert.expiryDate}</span>
-              </>
-            )}
-          </div>
-
-          {cert.credentialId && (
-            <p className="mt-1 font-mono text-[0.65rem] text-muted/80">Credential ID {cert.credentialId}</p>
-          )}
+          <p className="mt-2 font-mono text-[0.68rem] text-muted">
+            Issued {cert.issuedDate}
+            <span className="mx-2 opacity-40">·</span>
+            {cert.expiryDate ? `Expires ${cert.expiryDate}` : "No expiration"}
+          </p>
 
           {cert.skills && cert.skills.length > 0 && (
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="mt-auto flex flex-wrap gap-1.5 pt-3">
               {cert.skills.map((skill) => (
                 <Tag key={skill} label={skill} />
               ))}
