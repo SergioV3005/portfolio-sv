@@ -22,8 +22,8 @@ export default function HomePage() {
   const linkedIn = site.socials.find((item) => item.label === "LinkedIn")?.href;
 
   return (
-    <div className="space-y-28">
-      <HeroParallaxSection className="space-viewport relative overflow-hidden rounded-[1.75rem] px-6 py-12 animate-fade-in sm:px-10 lg:px-14 lg:py-16">
+    <div className="space-y-20 md:space-y-28">
+      <HeroParallaxSection className="space-viewport relative overflow-hidden rounded-3xl px-5 py-10 animate-fade-in sm:rounded-[1.75rem] sm:px-10 sm:py-12 lg:px-14 lg:py-16">
         <div className="space-layer" aria-hidden="true">
           <span className="starfield" />
           <span className="starfield starfield-far" />
@@ -35,20 +35,20 @@ export default function HomePage() {
         <span className="hud-corner hud-bl" aria-hidden="true" />
         <span className="hud-corner hud-br" aria-hidden="true" />
 
-        <div className="grid items-center gap-12 lg:min-h-[540px] lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="grid items-center gap-10 lg:min-h-[540px] lg:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="eyebrow">
               <span className="status-dot" aria-hidden="true" />
               {site.headline}
             </p>
-            <h1 className="mt-6 font-display text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 font-display text-[2.6rem] font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
               <span className="gradient-text">{site.name}</span>
             </h1>
             <p className="mt-6 max-w-xl font-display text-xl font-medium leading-snug text-fg md:text-2xl">
               {site.heroTagline}
             </p>
             <p className="mt-5 max-w-xl text-[0.95rem] leading-7 text-muted">{site.description}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
               <Link href="/cv" className="btn-gradient rounded-xl px-6 text-sm">
                 Download CV
                 <span aria-hidden="true">&darr;</span>
@@ -57,7 +57,7 @@ export default function HomePage() {
                 Contact
               </a>
             </div>
-            <div className="mt-10 grid max-w-xl gap-3 sm:grid-cols-3">
+            <div className="mt-10 grid max-w-xl grid-cols-3 gap-2 sm:gap-3">
               <div className="signal-tile">
                 <span>Focus</span>
                 <strong>LLM/RAG</strong>
@@ -77,7 +77,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative" aria-hidden="true">
+          <div className="hero-visual relative" aria-hidden="true">
             <div className="radar">
               <span className="radar-ring radar-ring-1" />
               <span className="radar-ring radar-ring-2" />
@@ -176,14 +176,14 @@ export default function HomePage() {
         title="Contact"
         description="Open to data engineering and AI engineering roles, collaborations, and research projects."
       >
-        <div className="cta-panel rounded-3xl p-8 md:p-12">
+        <div className="cta-panel rounded-3xl p-6 sm:p-8 md:p-12">
           <div className="relative z-[1] max-w-xl">
             <p className="eyebrow">
               <span className="status-dot" aria-hidden="true" />
               Open channel
             </p>
-            <p className="mt-4 font-display text-2xl font-bold tracking-tight md:text-3xl">{site.email}</p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <p className="mt-4 break-all font-display text-xl font-bold tracking-tight sm:break-normal sm:text-2xl md:text-3xl">{site.email}</p>
+            <div className="mt-8 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:items-center">
               <a href={`mailto:${site.email}`} className="btn-gradient rounded-xl px-6 text-sm">
                 Email Sergio
               </a>

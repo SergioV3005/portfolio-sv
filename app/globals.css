@@ -57,6 +57,8 @@ html {
 
 body {
   min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
   background-color: rgb(var(--bg));
   color: rgb(var(--fg));
@@ -912,6 +914,13 @@ a {
 
 /* ---------- Responsive + motion preferences ---------- */
 
+.mobile-nav .nav-link[aria-current="page"]::after {
+  left: auto;
+  right: 0.9rem;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
 @media (max-width: 767px) {
   .starfield-far,
   .meteor {
@@ -919,13 +928,69 @@ a {
   }
 
   .radar {
-    width: min(100%, 340px);
+    width: min(100%, 300px);
   }
 
   .telemetry-panel {
     right: auto;
     left: 0;
     bottom: 0;
+  }
+
+  .cta-panel::after {
+    right: -12rem;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 639px) {
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  /* Phones: keep the hero compact; the radar becomes a small accent below the copy. */
+  .radar {
+    width: min(78%, 260px);
+  }
+
+  .telemetry-panel {
+    display: none;
+  }
+
+  .hud-corner {
+    width: 14px;
+    height: 14px;
+  }
+
+  .hud-tl { top: 10px; left: 10px; }
+  .hud-tr { top: 10px; right: 10px; }
+  .hud-bl { bottom: 10px; left: 10px; }
+  .hud-br { bottom: 10px; right: 10px; }
+
+  .signal-tile {
+    padding: 0.65rem 0.7rem;
+  }
+
+  .signal-tile span {
+    font-size: 0.56rem;
+    letter-spacing: 0.12em;
+  }
+
+  .signal-tile strong {
+    font-size: 0.78rem;
+  }
+
+  .timeline {
+    padding-left: 1.25rem;
+  }
+
+  .timeline::before {
+    left: 0.3rem;
+  }
+
+  .timeline .timeline-node {
+    left: calc(-1.25rem + 0.3rem - 5px);
+    top: 1.6rem;
   }
 }
 

@@ -5,7 +5,7 @@ import { Project } from "@/lib/types";
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="project-card glass-card group flex h-full flex-col overflow-hidden rounded-2xl">
-      <div className="project-media relative h-52 w-full overflow-hidden rounded-t-2xl">
+      <div className="project-media relative aspect-[16/9] w-full sm:aspect-auto sm:h-52 overflow-hidden rounded-t-2xl">
         <Image
           src={project.image}
           alt={project.title}
@@ -14,7 +14,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
-      <div className="relative flex flex-1 flex-col gap-4 p-6">
+      <div className="relative flex flex-1 flex-col gap-4 p-5 sm:p-6">
         <div>
           <h3 className="font-display text-xl font-bold tracking-tight">{project.title}</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted">{project.description}</p>

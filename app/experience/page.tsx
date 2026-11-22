@@ -7,7 +7,7 @@ import { certifications } from "@/content/certifications";
 
 export default function ExperiencePage() {
   return (
-    <div className="space-y-24">
+    <div className="space-y-16 md:space-y-24">
       <Section
         index="01"
         title="Experience"
@@ -27,9 +27,9 @@ export default function ExperiencePage() {
       >
         <div className="timeline">
           {education.map((item) => (
-            <div key={item.degree} className="glass-card rounded-2xl p-6">
+            <div key={item.degree} className="glass-card rounded-2xl p-5 sm:p-6">
               <span className="timeline-node" aria-hidden="true" />
-              <div className="flex flex-wrap items-start justify-between gap-3">
+              <div className="flex flex-col items-start gap-3">
                 <div className="flex items-start gap-3">
                   <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-accent/30 bg-accent/10 text-accent">
                     <svg

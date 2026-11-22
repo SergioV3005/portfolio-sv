@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
@@ -23,6 +23,16 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
   variable: "--font-display",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#04050c" },
+    { media: "(prefers-color-scheme: light)", color: "#f2f4fa" },
+  ],
+};
 
 export const metadata: Metadata = {
   title: {
@@ -60,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeScript />
         <div className="relative">
           <Navbar />
-          <main className="mx-auto w-full max-w-6xl px-4 pb-24 pt-6 sm:px-6">{children}</main>
+          <main className="mx-auto w-full max-w-6xl px-4 pb-16 pt-6 sm:px-6 sm:pb-24">{children}</main>
           <Footer />
         </div>
       </body>

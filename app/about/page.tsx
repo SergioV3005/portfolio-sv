@@ -4,7 +4,7 @@ import { site } from "@/content/site";
 
 export default function AboutPage() {
   return (
-    <div className="space-y-24">
+    <div className="space-y-16 md:space-y-24">
       <Section index="01" title="About" description="A quick snapshot of my background and current focus.">
         <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
           <div className="space-y-5 text-[1.02rem] leading-8 text-muted">

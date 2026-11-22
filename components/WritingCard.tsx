@@ -6,7 +6,7 @@ export default function WritingCard({ post }: { post: Writing }) {
       href={post.href}
       target="_blank"
       rel="noreferrer"
-      className="glass-card group flex items-center gap-5 rounded-2xl p-5 md:p-6"
+      className="glass-card group flex items-center gap-5 rounded-2xl p-4 sm:p-5 md:p-6"
     >
       <div className="min-w-0 flex-1">
         <span className="font-mono text-[0.68rem] uppercase tracking-[0.2em] text-accent">{post.source}</span>
@@ -17,7 +17,7 @@ export default function WritingCard({ post }: { post: Writing }) {
       </div>
       <span
         aria-hidden="true"
-        className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line/15 text-muted transition-all duration-300 group-hover:border-accent/60 group-hover:bg-accent/10 group-hover:text-accent"
+        className="hidden h-10 w-10 shrink-0 sm:grid place-items-center rounded-full border border-line/15 text-muted transition-all duration-300 group-hover:border-accent/60 group-hover:bg-accent/10 group-hover:text-accent"
       >
         <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M7 17 17 7" />

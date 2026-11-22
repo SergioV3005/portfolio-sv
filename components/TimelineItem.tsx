@@ -3,7 +3,7 @@ import { Experience } from "@/lib/types";
 
 export default function TimelineItem({ item }: { item: Experience }) {
   return (
-    <div className="glass-card rounded-2xl p-6">
+    <div className="glass-card rounded-2xl p-5 sm:p-6">
       <span className="timeline-node" aria-hidden="true" />
       <div className="flex flex-col items-start gap-3">
         <div className="flex items-start gap-3">

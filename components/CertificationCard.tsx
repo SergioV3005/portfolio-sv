@@ -9,7 +9,7 @@ export default function CertificationCard({ cert }: { cert: Certification }) {
       target="_blank"
       rel="noreferrer"
       title={cert.credentialId ? `Credential ID ${cert.credentialId}` : undefined}
-      className="glass-card group flex h-full flex-col rounded-2xl p-5"
+      className="glass-card group flex h-full flex-col rounded-2xl p-4 sm:p-5"
     >
       <div className="flex flex-1 items-start gap-4">
         <div className="logo-chip h-11 w-11 shrink-0 rounded-xl">
